@@ -1,0 +1,82 @@
+html{
+    background-color: white;
+    display: grid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1200px;
+    justify-self: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background: linear-gradient( rgb(228, 228, 228), rgb(255, 255, 255) 100%);
+    position: sticky;
+    top: 0;
+    color: white;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+}
+
+#company-name{
+    font-size: 27px;
+    color: blue
+}
+
+.header>img{
+    margin: 0px 10px;
+}
+
+.header>.tabs {
+    margin-left: auto;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+}
+
+.header>.tabs>.tab {
+    display: block;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 70px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    height: 70px;
+    min-width: 80px;
+    transition: all 0.3s;
+}
+
+.header>.tabs>.tab:hover {
+    background-color: rgb(32, 32, 32);
+    color: rgb(219, 219, 219);
+}
+
+.main-content{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    border: none;
+    overflow-y: hidden;
+}
+
+.footer{
+    position: relative;
+    margin-top: auto;
+    bottom: 0;
+    height: 300px;
+    width: 100%;
+    background-color: red;
+}
