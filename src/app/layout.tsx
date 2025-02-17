@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import './layout.css';
+import './layout.scss';
 import Link from "next/link";
 import Image from 'next/image';
 
@@ -29,7 +29,7 @@ export default function RootLayout({
         <div className="main-content">
           {children}
         </div>
-        <div className="footer"></div>
+        <div className="footer"><span>Footer info</span></div>
       </body>
     </html>
   );
