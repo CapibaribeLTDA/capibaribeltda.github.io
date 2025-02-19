@@ -1,0 +1,122 @@
+.bubble {
+    position: relative;
+    min-height: 500px;
+    border: none;
+    border-radius: 10px;
+    width: 60%;
+    flex-shrink: 1;
+    --bubble-transition-time: .3s;
+    transition: all var(--bubble-transition-time) ease-in-out;
+    overflow: hidden;
+  
+    &:hover {
+      box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
+    }
+  
+    &:focus-within {
+      flex-shrink: 0;
+      box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
+    }
+  
+    &:focus-within::before,
+    &:focus-within::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 0;
+      border-radius: 10px;
+      background-image: conic-gradient(
+        from var(--angle),
+        transparent,
+        transparent 20%,
+        cyan 50%,
+        transparent 50%,
+        transparent 70%,
+        cyan 100%
+      );
+      inset: 0;
+      animation: 12s rotation linear infinite;
+    }
+  
+    &:focus-within::after {
+      z-index: 1;
+      filter: blur(7px);
+      opacity: 0.5;
+    }
+  
+    > button {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      z-index: 2;
+      border: none;
+      position: absolute;
+      mask-image: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255) 25%,
+        rgba(255, 255, 255) 75%,
+        transparent 100%
+      );
+      border-radius: 5px;
+      background-color: rgb(255, 255, 255);
+      inset: 5px;
+      transition: all 0.3s;
+      opacity: .5;
+
+      >div{
+        flex-grow: 1;
+        transition: all var(--bubble-transition-time);
+        display: grid;
+        >img{
+            align-self: center;
+        }
+      }
+
+      >p,h1{
+        opacity: 0;
+        flex-grow: 0;
+        height: 0px;
+        transition: all 0s;
+      }
+  
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+  
+      &:focus {
+        mask-image: none;
+        justify-content: flex-start;
+        >p,h1{
+            opacity: 1;
+            transition: all .3s;
+            transition-delay: var(--bubble-transition-time);
+        }
+
+        >p{
+            flex-grow: 1;
+        }
+        
+        >div{
+            flex-grow: 0;
+        }
+      }
+    }
+  }
+  
+  @keyframes rotation {
+    0% {
+      --angle: 0deg;
+    }
+    100% {
+      --angle: 360deg;
+    }
+  }
+  
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }

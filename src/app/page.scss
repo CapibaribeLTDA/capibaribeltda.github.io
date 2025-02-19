@@ -17,14 +17,16 @@
   border-radius: 10px;
   width: 60%;
   flex-shrink: 1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  // box-shadow: 1px 1px 1px 1px rgb(228, 228, 228);
 
   &:hover {
-    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
   }
 
   &:focus-within {
     flex-shrink: 0;
+    box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
   }
 
   &:focus-within::before,
@@ -65,10 +67,6 @@
       rgba(255, 255, 255) 75%,
       transparent 100%
     );
-    background-image: url(https://cdn-icons-png.freepik.com/512/149/149206.png);
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     inset: 5px;

@@ -1,13 +1,31 @@
-'use client'
-import './page.scss';
+"use client";
+import { TEXT_PT } from "@/lib/pt_text";
+import "./page.scss";
+import { HomeButton } from "@/components/home_button";
 
 export default function Home() {
   return (
-    <div id="frame1" className="">
-      <div id="bubble1" className="bubble"><button onFocus={() => {}}></button></div>
-      <div id="bubble2" className="bubble"><button onFocus={() => {}}></button></div>
-      <div id="bubble3" className="bubble"><button onFocus={() => {}}></button></div>
-      <div id="bubble4" className="bubble"><button onFocus={() => {}}></button></div>
+    <div>
+      <h1>Título</h1>
+      <p>Introdução</p>
+      <div id="frame1" className="">
+        <HomeButton
+          image_url={"/data-integration.png"}
+          inner_text={TEXT_PT.tabs.home.content[0]}
+        />
+        <HomeButton
+          image_url={"/data.png"}
+          inner_text={TEXT_PT.tabs.home.content[1]}
+        />
+        <HomeButton
+          image_url={"/monitor.png"}
+          inner_text={TEXT_PT.tabs.home.content[2]}
+        />
+        <HomeButton
+          image_url={"/document.png"}
+          inner_text={TEXT_PT.tabs.home.content[3]}
+        />
+      </div>
     </div>
   );
 }
