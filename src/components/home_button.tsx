@@ -16,7 +16,7 @@ export const HomeButton = ({ image_url, inner_text }: HomeButtonProps) => {
           <Image src={image_url} alt={"Home Icon"} height={200} width={200} />
         </div>
         <div className="home-service-description">
-          <ReactMarkdown children={inner_text.content} />
+          <ReactMarkdown>{inner_text.content}</ReactMarkdown>
         </div>
       </button>
     </div>
