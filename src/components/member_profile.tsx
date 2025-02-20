@@ -29,8 +29,8 @@ export const MemberProfile = ({ profile, alignment }: MemberProfileProps) => {
           width={150}
         />
         <div className="social-media">
-          {profile.media.map((media) => (
-            <MediaIcon media={media} />
+          {profile.media.map((media, index) => (
+            <MediaIcon key={index} media={media} />
           ))}
         </div>
       </div>

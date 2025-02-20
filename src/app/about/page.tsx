@@ -25,6 +25,7 @@ export default function About() {
       <div className="members-area">
         {MEMBERS_LIST.map((member, idx) => (
           <MemberProfile
+            key={idx}
             profile={member}
             alignment={idx % 2 == 0 ? "left" : "right"}
           />

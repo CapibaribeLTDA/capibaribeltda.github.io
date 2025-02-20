@@ -15,6 +15,7 @@ export default function Services() {
         <div className="services-list">
           {SERVICES_LIST.map((service, index) => (
             <button
+              key={index}
               className={index === activeTab ? "active" : undefined}
               onClick={() => updateTab(index)}
             >
