@@ -1,16 +1,31 @@
-import './services.scss';
+"use client";
+
+import { useState } from "react";
+import "./services.scss";
+import { SERVICES_LIST } from "@/lib/pt_text";
+import ReactMarkdown from "react-markdown";
 
 export default function Services() {
-    return (
-      <div id="frame3" className="inactive">
-        <h1>Services</h1>
-        <p className="description">Random text
-        </p>
-        <h2>Service 1</h2>
-        <h2>Service 2</h2>
-        <h2>Service 3</h2>
-        <h2>Service 4</h2>
+  const [activeTab, updateTab] = useState<number>(0);
+
+  return (
+    <div className="services-page">
+      <h1>Services</h1>
+      <div className="services-panel">
+        <div className="services-list">
+          {SERVICES_LIST.map((service, index) => (
+            <button
+              className={index === activeTab ? "active" : undefined}
+              onClick={() => updateTab(index)}
+            >
+              {service.name}
+            </button>
+          ))}
+        </div>
+        <div className="service-description">
+          <ReactMarkdown>{SERVICES_LIST[activeTab].description}</ReactMarkdown>
+        </div>
       </div>
-    );
-  }
-  
+    </div>
+  );
+}

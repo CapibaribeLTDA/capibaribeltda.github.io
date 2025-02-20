@@ -35,9 +35,9 @@ export const MemberProfile = ({ profile, alignment }: MemberProfileProps) => {
         </div>
       </div>
       <span>{profile.name}</span>
-      <p>
+      <div className="member-description">
         <ReactMarkdown>{profile.description}</ReactMarkdown>
-      </p>
+      </div>
     </div>
   );
 };

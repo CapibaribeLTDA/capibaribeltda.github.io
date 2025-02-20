@@ -1,0 +1,34 @@
+.services-page{
+    >.services-panel{
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 200px auto;
+        column-gap: 15px;
+        min-height: 500px;
+
+        >.services-list{
+            display: flex;
+            flex-direction: column;
+
+            >button{
+                padding: 10px;
+                border: none;
+                background-color: rgb(245, 245, 245);
+                text-align: left;
+                font-size: 1rem;
+                z-index: 1;
+                
+                &.active{
+                    background-color: white;
+                    box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
+                    z-index: 2;
+                }
+
+                &:hover{
+                    box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}
