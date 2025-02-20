@@ -1,1 +1,0 @@
-.member{display:grid;width:100%;max-height:400px}.member.left{grid-template-areas:"photo name" "photo description"}.member.right{grid-template-areas:"name photo" "description photo"}.member>img{grid-area:photo;height:100px;width:100px}.member>span{grid-area:name;font-size:2rem}.member.right>spam{text-align:right}.member>p{grid-area:description}
