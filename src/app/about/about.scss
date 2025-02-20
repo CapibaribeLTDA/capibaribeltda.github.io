@@ -1,0 +1,12 @@
+/* About tab */
+
+#frame2{
+    padding: 0px;
+
+    >.members-area{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

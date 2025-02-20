@@ -5,9 +5,8 @@ import { HomeButton } from "@/components/home_button";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Título</h1>
-      <p>Introdução</p>
+    <div className="home-page">
+      <h1>Como soluções tecnológicas de dados te ajudam a escalar o seu negócio</h1>
       <div id="frame1" className="">
         <HomeButton
           image_url={"/data-integration.png"}

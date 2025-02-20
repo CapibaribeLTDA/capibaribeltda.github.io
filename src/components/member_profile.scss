@@ -1,0 +1,68 @@
+.member {
+  position: relative;
+  display: grid;
+  padding: 10px;
+  width: 100%;
+  column-gap: 10px;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: rgb(202, 202, 202) 1px solid;
+    height: 100%;
+    width: 100%;
+    mask-repeat: no-repeat;
+    pointer-events: none;
+  }
+
+  &.left {
+    grid-template-areas: "photo name" "photo description";
+    > span {
+      text-align: left;
+    }
+
+    &:after {
+      border-left: rgb(202, 202, 202) 1px solid;
+      mask-image: linear-gradient(330deg, transparent 80%, white 100%);
+    }
+  }
+
+  &.right {
+    grid-template-areas: "name photo" "description photo";
+    > span {
+      text-align: right;
+    }
+    &:after {
+      border-right: rgb(202, 202, 202) 1px solid;
+      mask-image: linear-gradient(30deg, transparent 80%, white 100%);
+    }
+  }
+
+  > .profile-pic {
+    grid-area: photo;
+    align-self: center;
+    > img {
+      mask-image: radial-gradient(white 0%, white 60%, transparent 70%);
+    }
+    > .social-media {
+      display: block;
+      justify-self: center;
+      >*{
+        margin: 0 2px;
+      }
+    }
+  }
+
+  > span {
+    grid-area: name;
+    font-size: 2rem;
+  }
+
+  > p {
+    grid-area: description;
+    text-align: justify;
+  }
+
+  
+}
