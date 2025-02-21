@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import "./tabs_menu.scss";
 import { useState } from "react";
 

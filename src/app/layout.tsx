@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import './layout.scss';
-import Link from "next/link";
 import Image from 'next/image';
 import { TabsMenu } from "@/components/tabs_menu";
 
