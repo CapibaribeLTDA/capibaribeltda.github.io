@@ -1,7 +1,7 @@
 /* Home tab */
 
 .home-page{
-  height: calc(100vh - 370px);
+  height: auto;
   min-height: 800px;
   display: flex;
   flex-direction: column;
@@ -13,10 +13,16 @@
 
 #frame1 {
   padding: 15px;
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   align-items: stretch;
   gap: 10px;
   flex-grow: 1;
+}
+
+@media only screen and (max-width: 1000px){
+  #frame1{
+    flex-direction: column;
+  }
 }

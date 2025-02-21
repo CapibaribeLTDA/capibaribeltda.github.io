@@ -11,7 +11,7 @@ export const HomeButton = ({ image_url, inner_text }: HomeButtonProps) => {
   return (
     <div className="bubble">
       <button>
-        <div>
+        <div className="home-icon-wrapper">
           <h1>{inner_text.title}</h1>
           <Image src={image_url} alt={"Home Icon"} height={200} width={200} />
         </div>

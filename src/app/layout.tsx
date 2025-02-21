@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import './layout.scss';
 import Link from "next/link";
 import Image from 'next/image';
+import { TabsMenu } from "@/components/tabs_menu";
 
 export const metadata: Metadata = {
   title: "CapibaribeTI",
@@ -19,12 +20,7 @@ export default function RootLayout({
         <div className="header">
           <Image src="/logo.png" width={50} height={50} alt="Logo" />
           <span id="company-name">CAPIBARIBETI</span>
-          <div className="tabs">
-            <Link className="tab" href="/">Início</Link>
-            <Link className="tab" href="/about">Sobre</Link>
-            <Link className="tab" href="services">Serviços</Link>
-            <Link className="tab" href="/contact">Contato</Link>
-          </div>
+          <TabsMenu/>
         </div>
         <div className="main-content">
           {children}

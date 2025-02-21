@@ -1,13 +1,11 @@
 .bubble {
   position: relative;
-  height: 100%;
   border: none;
   border-radius: 10px;
   width: 45%;
   flex-shrink: 1;
   --bubble-transition-time: 0.3s;
   transition: all var(--bubble-transition-time) ease-in-out;
-  overflow: hidden;
 
   &:hover {
     box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
@@ -65,8 +63,11 @@
     inset: 5px;
     transition: all 0.3s;
     opacity: 0.8;
+    &::-webkit-scrollbar{
+      display: none;
+    }
 
-    > div {
+    > .home-icon-wrapper {
       transition: all var(--bubble-transition-time);
       flex-grow: 1;
       display: flex;
@@ -80,8 +81,8 @@
     > .home-service-description {
       flex-grow: 0;
       opacity: 0;
-      height: 0px;
       transition: all 0s;
+      height: 0;
 
       > * {
         margin: 5px 0px;
@@ -100,8 +101,13 @@
 
     &:focus {
       mask-image: none;
-      > div {
+      overflow: scroll;
+      >.home-icon-wrapper{
         flex-grow: 0;
+        // >img{
+        //   transition: all var(--bubble-transition-time);
+        //   scale: 0.5
+        // }
       }
       > .home-service-description {
         transition: opacity 0.3s;
@@ -109,6 +115,18 @@
         opacity: 1;
         flex-grow: 1;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .bubble{
+    width: auto;
+    flex-shrink: 0;
+    height: 300px;
+
+    &:focus-within{
+      height: 600px;
     }
   }
 }
