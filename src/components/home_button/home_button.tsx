@@ -25,7 +25,7 @@ export const HomeButton = ({ image_url, inner_text }: HomeButtonProps) => {
         className={isActive ? 'active' : ''} 
         onClick={(e) => {
           setActive(!isActive);
-          e.currentTarget.scrollIntoView({behavior: 'smooth'})
+          e.currentTarget.scrollIntoView({behavior: 'smooth', block: 'center'})
         }}>
         <div className="home-icon-wrapper">
           <h1>{inner_text.title}</h1>

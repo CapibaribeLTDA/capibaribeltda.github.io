@@ -6,6 +6,7 @@
   flex-shrink: 1;
   --bubble-transition-time: 0.3s;
   transition: all var(--bubble-transition-time) ease-in-out;
+  overflow: hidden;
 
   &:hover {
     box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);

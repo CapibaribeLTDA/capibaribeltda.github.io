@@ -19,6 +19,10 @@
   align-items: stretch;
   gap: 10px;
   flex-grow: 1;
+  overflow: scroll;
+  &::-webkit-scrollbar{
+    display: none;
+  }
 }
 
 @media only screen and (width <= 1000px){
