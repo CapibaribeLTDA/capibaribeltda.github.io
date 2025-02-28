@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import './layout.scss';
 import Image from 'next/image';
-import { TabsMenu } from "@/components/tabs_menu";
+import { TabsMenu } from "@/components/tabs_menu/tabs_menu";
 
 export const metadata: Metadata = {
   title: "CapibaribeTI",

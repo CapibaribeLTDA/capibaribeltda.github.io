@@ -3,20 +3,21 @@
 import Link from "next/link";
 import "./tabs_menu.scss";
 import { useState } from "react";
+import { useOutsideClick } from "@/lib/custom_hooks/useOutsideClick";
 
 export const TabsMenu = () => {
   const [menuOpen, updateMenu] = useState<boolean>(false);
 
+  const ref = useOutsideClick(() => {
+    updateMenu(false);
+  })
+
   return (
     <div
       className={`tabs ${menuOpen ? "open" : null}`}
-      onBlur={(e) =>
-        menuOpen &&
-        !e.currentTarget.contains(e.relatedTarget) &&
-        updateMenu(false)
-      }
+      ref={ref}
     >
-      <button onFocus={() => updateMenu(true)}/>
+      <button onClick={() => updateMenu(!menuOpen)}/>
       <Link className="tab" href="/" onClick={() => updateMenu(false)}>
         Início
       </Link>

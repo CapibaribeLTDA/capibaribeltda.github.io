@@ -1,4 +1,4 @@
-import { MemberProfile } from "@/components/member_profile";
+import { MemberProfile } from "@/components/member_profile/member_profile";
 import "./about.scss";
 import { MEMBERS_LIST } from "@/lib/pt_text";
 
@@ -18,7 +18,7 @@ CapibaribeTI continua a evoluir, garantindo que o universo funcione sem falhas.
 
 export default function About() {
   return (
-    <div id="frame2">
+    <div className="about-page">
       <h1>Origem</h1>
       <p>{introduction}</p>
       <h1>A equipe</h1>

@@ -1,34 +1,99 @@
-.services-page{
-    >.services-panel{
+.services-page {
+    >.services-panel {
         padding: 15px;
         display: grid;
-        grid-template-columns: 200px auto;
+        grid-template-columns: auto auto auto;
         column-gap: 15px;
-        min-height: 500px;
 
-        >.services-list{
+        >.list-switch {
+            display: none;
+        }
+
+        >.services-list {
             display: flex;
+            width: 200px;
             flex-direction: column;
 
-            >button{
+            >button {
                 padding: 10px;
                 border: none;
                 background-color: rgb(245, 245, 245);
                 text-align: left;
                 font-size: 1rem;
                 z-index: 1;
-                
-                &.active{
+
+                &.active {
                     background-color: white;
                     box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
                     z-index: 2;
                 }
 
-                &:hover{
+                &:hover {
                     box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
                     z-index: 2;
                 }
             }
         }
+    }
+}
+
+@media only screen and (width <=600px) {
+    .services-page {
+        >.services-panel {
+            height: 65vh;
+            column-gap: 5px;
+
+            >.list-switch {
+                display: block;
+                border: none;
+                border-radius: 10px;
+                background-color: white;
+                box-shadow: 1px 0px 2px 0px rgb(228, 228, 228);
+                >img{
+                    transition: rotate 0.5s;
+                    rotate: 0;
+                }
+
+                &.active {
+                    box-shadow: 1px 1px 4px 2px rgb(228, 228, 228);
+                    >img{
+                        rotate: -180deg;
+                    }
+                }
+            }
+
+            >.services-list {
+                width: 0px;
+                transition: width 0.3s;
+                opacity: 0;
+                overflow: hidden;
+
+                &.active {
+                    width: 200px;
+                    opacity: 1;
+                    transition: opacity 0.05s, width 0.3s;
+                    transition-delay: 0.3s, 0s;
+                }
+            }
+
+            >.service-description {
+                --mask-margin: 10px;
+                opacity: 1;
+                overflow: scroll;
+                transition: opacity 0.5s;
+                transition-delay: 0.3s;
+                mask-image: linear-gradient(
+                    transparent 0%, 
+                    white var(--mask-margin), 
+                    white calc(100% - var(--mask-margin)), 
+                    transparent 100%);
+
+                &.inactive {
+                    opacity: 0;
+                    transition: opacity 0s;
+                }
+            }
+        }
+
     }
 }

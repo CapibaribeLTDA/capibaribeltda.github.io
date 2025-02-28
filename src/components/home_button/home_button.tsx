@@ -1,6 +1,10 @@
+'useclient'
+
 import "./home_button.scss";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
+import { useState } from "react";
+import { useOutsideClick } from "@/lib/custom_hooks/useOutsideClick";
 
 export type HomeButtonProps = {
   image_url: string;
@@ -8,9 +12,21 @@ export type HomeButtonProps = {
 };
 
 export const HomeButton = ({ image_url, inner_text }: HomeButtonProps) => {
+
+  const [isActive, setActive] = useState<boolean>(false);
+
+  const ref = useOutsideClick(() => {
+    setActive(false);
+  });
+
   return (
-    <div className="bubble">
-      <button>
+    <div ref={ref} className={`bubble ${isActive ? 'active' : ''}`}>
+      <button 
+        className={isActive ? 'active' : ''} 
+        onClick={(e) => {
+          setActive(!isActive);
+          e.currentTarget.scrollIntoView({behavior: 'smooth'})
+        }}>
         <div className="home-icon-wrapper">
           <h1>{inner_text.title}</h1>
           <Image src={image_url} alt={"Home Icon"} height={200} width={200} />

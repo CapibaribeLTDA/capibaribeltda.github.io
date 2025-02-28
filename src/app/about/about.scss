@@ -1,12 +1,19 @@
 /* About tab */
 
-#frame2{
+.about-page{
     width: 100%;
-
     >.members-area{
         padding: 30px;
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+}
+
+@media only screen and (width <= 600px) {
+    .about-page{
+        >.members-area{
+            padding: 5px;
+        }
     }
 }

@@ -11,13 +11,13 @@
     box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
   }
 
-  &:focus-within {
+  &.active {
     flex-shrink: 0;
     box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
   }
 
-  &:focus-within::before,
-  &:focus-within::after {
+  &.active::before,
+  &.active::after {
     content: "";
     display: block;
     position: absolute;
@@ -36,7 +36,7 @@
     animation: 12s rotation linear infinite;
   }
 
-  &:focus-within::after {
+  &.active::after {
     z-index: 1;
     filter: blur(7px);
     opacity: 0.5;
@@ -51,21 +51,16 @@
     z-index: 2;
     border: none;
     position: absolute;
-    // mask-image: linear-gradient(
-    //   90deg,
-    //   transparent 0%,
-    //   rgba(255, 255, 255) 25%,
-    //   rgba(255, 255, 255) 75%,
-    //   transparent 100%
-    // );
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     inset: 5px;
     transition: all 0.3s;
-    opacity: 0.8;
+    opacity: 0.65;
     &::-webkit-scrollbar{
       display: none;
     }
+
+    
 
     > .home-icon-wrapper {
       transition: all var(--bubble-transition-time);
@@ -95,11 +90,11 @@
     }
 
     &:hover,
-    &:focus {
+    &.active {
       opacity: 1;
     }
 
-    &:focus {
+    &.active {
       mask-image: none;
       overflow: scroll;
       >.home-icon-wrapper{
@@ -124,8 +119,9 @@
     width: auto;
     flex-shrink: 0;
     height: 300px;
+    transition: none;
 
-    &:focus-within{
+    &.active{
       height: 600px;
     }
   }

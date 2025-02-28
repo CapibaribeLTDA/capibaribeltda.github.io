@@ -18,7 +18,8 @@
 
   &.left {
     grid-template-areas: "photo name" "photo description";
-    > span {
+
+    >span {
       text-align: left;
     }
 
@@ -30,39 +31,64 @@
 
   &.right {
     grid-template-areas: "name photo" "description photo";
-    > span {
+
+    >span {
       text-align: right;
     }
+
     &:after {
       border-right: rgb(202, 202, 202) 1px solid;
       mask-image: linear-gradient(30deg, transparent 80%, white 100%);
     }
   }
 
-  > .profile-pic {
+  >.profile-pic {
     grid-area: photo;
     align-self: center;
-    > img {
+
+    >img {
       mask-image: radial-gradient(white 0%, white 60%, transparent 70%);
     }
-    > .social-media {
+
+    >.social-media {
       display: block;
       justify-self: center;
-      >*{
+
+      >* {
         margin: 0 2px;
       }
     }
   }
 
-  > span {
+  >span {
     grid-area: name;
     font-size: 2rem;
   }
 
-  > .member-description {
+  >.member-description {
     grid-area: description;
     text-align: justify;
   }
 
-  
+
+}
+
+@media only screen and (width <=600px) {
+  .member {
+    position: relative;
+    display: grid;
+    padding: 10px;
+    width: 100%;
+    column-gap: 10px;
+
+    &.left {
+      grid-template-areas: "photo name" "description description";
+      grid-template-columns: 150px auto;
+    }
+
+    &.right {
+      grid-template-areas: "name photo" "description description";
+      grid-template-columns: auto 150px;
+    }
+  }
 }

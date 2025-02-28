@@ -1,12 +1,12 @@
 "use client";
 import { TEXT_PT } from "@/lib/pt_text";
 import "./page.scss";
-import { HomeButton } from "@/components/home_button";
+import { HomeButton } from "@/components/home_button/home_button";
 
 export default function Home() {
   return (
     <div className="home-page">
-      <h1>Como soluções tecnológicas de dados te ajudam a escalar o seu negócio</h1>
+      <h1>Soluções tecnológicas que ajudam a escalar o seu negócio</h1>
       <div id="frame1" className="">
         <HomeButton
           image_url={"/data-integration.png"}
