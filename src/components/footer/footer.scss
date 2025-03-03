@@ -1,0 +1,106 @@
+.footer {
+    background: #11111100;
+    color: rgb(70,70,70);
+    padding: 2rem 0;
+  
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      padding: 0 2rem;
+    }
+  
+    .footer-section {
+      h2, h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+  
+      p {
+        color: #bbb;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin: 0.5rem 0;
+  
+          a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+  
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+  
+      .social-icons {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.5rem;
+  
+        a {
+          color: #bbb;
+          font-size: 1.5rem;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+  
+      form {
+        margin-top: 1rem;
+        
+        input {
+          width: 100%;
+          padding: 0.5rem;
+          border-radius: 5px;
+          border: none;
+        }
+  
+        button {
+          margin-top: 0.5rem;
+          width: 100%;
+          padding: 0.5rem;
+          background: #007bff;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background 0.3s;
+  
+          &:hover {
+            background: #0056b3;
+          }
+        }
+      }
+    }
+  
+    .footer-bottom {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      color: #bbb;
+
+      &:before {
+        content: "";
+        display: block;
+        border-top: rgb(202, 202, 202) 1px solid;
+        height: 100%;
+        width: 100%;
+        mask-image: linear-gradient(90deg,
+            transparent 0%,
+            white 50%,
+            transparent 100%);
+        mask-repeat: no-repeat;
+      }
+    }
+  }
+  

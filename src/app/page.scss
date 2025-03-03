@@ -13,20 +13,17 @@
 
 #frame1 {
   padding: 15px;
-  height: fit-content;
+  height: max-content;
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  justify-content: space-evenly;
   gap: 10px;
   flex-grow: 1;
-  overflow: scroll;
-  &::-webkit-scrollbar{
-    display: none;
-  }
 }
 
 @media only screen and (width <= 1000px){
   #frame1{
-    flex-direction: column;
+    display: block;
   }
 }

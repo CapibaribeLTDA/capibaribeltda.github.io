@@ -22,11 +22,9 @@ export const HomeButton = ({ image_url, inner_text }: HomeButtonProps) => {
   return (
     <div ref={ref} className={`bubble ${isActive ? 'active' : ''}`}>
       <button 
-        className={isActive ? 'active' : ''} 
-        onClick={(e) => {
-          setActive(!isActive);
-          e.currentTarget.scrollIntoView({behavior: 'smooth', block: 'center'})
-        }}>
+        className={isActive ? 'active' : ''}  
+        onMouseUp={() => setActive(true)}
+        onTouchEnd={() => setActive(true)}>
         <div className="home-icon-wrapper">
           <h1>{inner_text.title}</h1>
           <Image src={image_url} alt={"Home Icon"} height={200} width={200} />
