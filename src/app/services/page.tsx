@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import "./services.scss";
-import { SERVICES_LIST } from "@/lib/pt_text";
+import { SERVICES_LIST } from "@/lib/services_description";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 

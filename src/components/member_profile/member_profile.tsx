@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./member_profile.scss";
-import { MemberProfileEntries, SocialMedias } from "@/lib/pt_text";
+import { MemberProfileEntries, SocialMedias } from "@/lib/custom_types";
 import ReactMarkdown from "react-markdown";
 
 type MemberProfileProps = {

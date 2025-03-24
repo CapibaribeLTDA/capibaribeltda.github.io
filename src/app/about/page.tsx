@@ -1,6 +1,6 @@
 import { MemberProfile } from "@/components/member_profile/member_profile";
 import "./about.scss";
-import { MEMBERS_LIST } from "@/lib/pt_text";
+import { MEMBERS_LIST } from "@/lib/member_info";
 
 const introduction = `Nos confins do universo, surgiu a CapibaribeTI, 
 a primeira empresa de engenharia de dados celestial, 
