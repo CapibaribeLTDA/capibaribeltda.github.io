@@ -1,6 +1,5 @@
 export type SocialMedias = { name: string; link: string };
 
-
 export type MemberProfileEntries = {
     name: string;
     media: SocialMedias[];
