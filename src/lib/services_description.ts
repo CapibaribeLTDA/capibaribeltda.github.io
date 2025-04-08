@@ -9,39 +9,39 @@ segurança e performance para seus pipelines analíticos e operacionais.
 
 ---
 
-## **🔧 Principais Serviços**  
+## **Principais Serviços**  
 
-### **📥 Ingestão & Processamento**  
+### **Ingestão & Processamento**  
 - Pipelines ETL/ELT automatizados (Airflow, Spark, dbt, Fivetran)  
 - Integração de dados estruturados e não estruturados (APIs, IoT, logs)  
 - Stream processing em tempo real (Kafka, Flink, Pub/Sub)  
 
-### **🗄️ Armazenamento & Governança**  
+### **Armazenamento & Governança**  
 - Arquitetura de **Data Lakes** (Delta Lake, S3, GCS) + **Warehouses** (BigQuery, Snowflake)  
 - Modelagem de camadas RAW/STAGING/PROD  
 - Data Catalog & Metadata Management (DataHub, Alation)  
 
-### **⚡ Performance & Otimização**  
+### **Performance & Otimização**  
 - Tuning de queries e particionamento estratégico  
 - Escalabilidade sob demanda (Kubernetes, serverless)  
 - Redução de custos em cloud (reserved instances, storage tiers)  
 
-### **🔒 Segurança & Compliance**  
+### **Segurança & Compliance**  
 - Criptografia (in-transit/at-rest) e RBAC  
 - Auditoria e rastreabilidade de dados (GDPR/LGPD)  
 - Disaster recovery & backup automatizado  
 
 ---
 
-## **🎯 Benefícios**  
-✅ **Redução de tempo-to-insight** com pipelines confiáveis  
-✅ **Single Source of Truth** para toda a organização  
-✅ **Prevenção a fraudes** via monitoramento de anomalias  
-✅ **Previsibilidade de custos** em ambientes cloud/híbridos  
+## **Benefícios**  
+ **Redução de tempo-to-insight** com pipelines confiáveis  
+ **Single Source of Truth** para toda a organização  
+ **Prevenção a fraudes** via monitoramento de anomalias  
+ **Previsibilidade de custos** em ambientes cloud/híbridos  
 
 ---
 
-## **📌 Casos de Uso**  
+## **Casos de Uso**  
 - Unificação de dados para **Customer 360**  
 - Plataforma analítica para times de **Marketing Attribution**  
 - Camada de dados para modelos de **Machine Learning**  
@@ -57,39 +57,39 @@ Oferecemos soluções completas em **análise de dados** para empresas que desej
 
 ---
 
-## **🔍 Principais Serviços**  
+## **Principais Serviços**  
 
-### **📊 Business Intelligence & Visualização**  
+### **Business Intelligence & Visualização**  
 - Dashboards interativos (Power BI, Tableau, Looker Studio)  
 - Relatórios automatizados e KPI tracking  
 - Análise exploratória (EDA) para identificar tendências  
 
-### **📈 Analytics Avançado**  
+### **Analytics Avançado**  
 - Modelos de atribuição (MTA, MMM) para marketing  
 - Segmentação de clientes (RFM, clustering)  
 - Análise de cohort e lifetime value (LTV)  
 
-### **🛡️ Detecção de Anomalias & Fraudes**  
+### **Detecção de Anomalias & Fraudes**  
 - Identificação de padrões suspeitos (machine learning)  
 - Alertas em tempo real para riscos operacionais  
 - Modelos de scoring para prevenção de fraudes  
 
-### **🔮 Predictive Analytics**  
+### **Predictive Analytics**  
 - Previsão de demanda e churn  
 - Recomendação personalizada (sistemas de recomendação)  
 - Simulações e cenários (what-if analysis)  
 
 ---
 
-## **🎯 Benefícios**  
-✅ **Decisões baseadas em dados** com métricas confiáveis  
-✅ **Automação de análises** manuais e repetitivas  
-✅ **Identificação de oportunidades** escondidas nos dados  
-✅ **Redução de riscos** com monitoramento proativo  
+## **Benefícios**  
+ **Decisões baseadas em dados** com métricas confiáveis  
+ **Automação de análises** manuais e repetitivas  
+ **Identificação de oportunidades** escondidas nos dados  
+ **Redução de riscos** com monitoramento proativo  
 
 ---
 
-## **📌 Casos de Uso**  
+## **Casos de Uso**  
 - Otimização de campanhas de marketing (**ROI analytics**)  
 - Análise de satisfação e NPS (**customer experience**)  
 - Detecção de transações fraudulentas (**fraud analytics**)  
@@ -103,26 +103,26 @@ Projetamos e implementamos **arquiteturas de dados modernas** que unem desempenh
 
 ---
 
-## **🏗️ Serviços Principais**  
+## **Serviços Principais**  
 
-### **🔧 Design Arquitetural**  
+### **Design Arquitetural**  
 - Avaliação de maturidade e blueprint tecnológico  
 - Modelagem de ambientes:  
   - Lakehouse (Delta Lake + Databricks)  
   - Data Mesh (domínios orientados a produtos)  
   - Event-Driven Architecture (Kafka, Pub/Sub)  
 
-### **🔄 Modernização de Plataformas**  
+### **Modernização de Plataformas**  
 - Migração de legado para cloud (AWS/GCP/Azure)  
 - Implementação de medallion architecture (bronze/silver/gold)  
 - Integração de ferramentas (Snowflake, dbt, Airflow)  
 
-### **🛡️ Governança & Metadados**  
+### **Governança & Metadados**  
 - Framework de data ownership e linhas de dados  
 - Catálogo de dados inteligente (DataHub, Alation)  
 - Controles de acesso fine-grained (RBAC, ABAC)  
 
-### **⚡ Otimização para Casos de Uso**  
+### **Otimização para Casos de Uso**  
 - Arquiteturas para:  
   - Customer 360° (unificação de perfis)  
   - Real-time analytics (Kafka + Flink)  
@@ -130,7 +130,7 @@ Projetamos e implementamos **arquiteturas de dados modernas** que unem desempenh
 
 ---
 
-## **✨ Diferenciais**  
+## **Diferenciais**  
 ▸ **Domínio de padrões** (EDA, CQRS, Data Vault 2.0)  
 ▸ **Foco em interoperabilidade** (APIs, contratos de dados)  
 ▸ **Custos transparentes** (TCO estimation)  
@@ -138,7 +138,7 @@ Projetamos e implementamos **arquiteturas de dados modernas** que unem desempenh
 
 ---
 
-## **📌 Projetos Típicos**  
+## **Projetos Típicos**  
 - Reestruturação pós-merger (consolidação de silos)  
 - Plataforma de dados para IA generativa  
 - Camada analítica para ESG reporting  
@@ -153,31 +153,31 @@ Desenvolvemos aplicações de inteligência artificial customizadas que resolvem
 
 ---
 
-## **🧠 Nossas Especialidades**
+## **Nossas Especialidades**
 
-### **🤖 Modelagem Preditiva**
+### **Modelagem Preditiva**
 - Sistemas de recomendação personalizada
 - Previsão de demanda e otimização de estoque
 - Detecção de churn e modelos de retenção
 
-### **🔍 Process Automation**
+### **Process Automation**
 - NLP para análise de documentos e contratos
 - Visão computacional para inspeção de qualidade
 - RPA inteligente com reinforcement learning
 
-### **🛡️ Fraud & Risk Intelligence**
+### **Fraud & Risk Intelligence**
 - Modelos de scoring para transações suspeitas
 - Análise de padrões comportamentais
 - Sistemas de alerta precoce para riscos
 
-### **📈 Generative AI Solutions**
+### **Generative AI Solutions**
 - Assistentes virtuais com LLMs
 - Geração automatizada de conteúdo
 - Sistemas de Q&A baseados em conhecimento
 
 ---
 
-## **⚙️ Tech Stack**
+## **Tech Stack**
 ▸ Frameworks: TensorFlow, PyTorch, Scikit-learn  
 ▸ Cloud ML: Vertex AI, SageMaker, Azure ML  
 ▸ MLOps: MLflow, Kubeflow, TFX  
@@ -185,15 +185,15 @@ Desenvolvemos aplicações de inteligência artificial customizadas que resolvem
 
 ---
 
-## **💡 Por Que Nós?**
-✅ **Foco em ROI** - métricas de impacto claras  
-✅ **Deployment garantido** - do POC à produção  
-✅ **Ética by design** - monitoramento de bias/drift  
-✅ **Time full-stack** - engenheiros + cientistas de dados  
+## **Por Que Nós?**
+ **Foco em ROI** - métricas de impacto claras  
+ **Deployment garantido** - do POC à produção  
+ **Ética by design** - monitoramento de bias/drift  
+ **Time full-stack** - engenheiros + cientistas de dados  
 
 ---
 
-## **📌 Casos**
+## **Casos**
 - Chatbot inteligente para atendimento ao cliente  
 - Sistema de classificação automática de documentos  
 - Motor de precificação dinâmica para e-commerce  
@@ -207,36 +207,36 @@ Oferecemos uma plataforma integrada de dados que unifica coleta, processamento, 
 
 ---
 
-## **🛠️ Componentes da Plataforma**
+## **Componentes da Plataforma**
 
-### **📥 Camada de Ingestão**
+### **Camada de Ingestão**
 - Conectores pré-built para 200+ fontes (SAP, Salesforce, bancos relacionais)
 - Streaming em tempo real (Kafka/Pulsar) e batch processing
 - Pipeline serverless para dados não estruturados (PDFs, imagens)
 
-### **🏗️ Data Hub Centralizado**
+### **Data Hub Centralizado**
 - Lakehouse architecture (Delta Lake + Spark)
 - Modelagem flexível: data vault 2.0 para dados transacionais
 - Camadas raw/curated/feature store
 
-### **⚡ Processamento**
+### **Processamento**
 - Workflows low-code (Apache Airflow + Prefect)
 - Transformações SQL/dbt + processamento distribuído
 - Ambiente dedicado para feature engineering (ML)
 
-### **🔍 Analytics Layer**
+### **Analytics Layer**
 - Virtualização de dados (Denodo, Dremio)
 - Catálogo inteligente com lineage automático
 - Workspaces segmentados por área de negócio
 
-### **🔒 Governança**
+### **Governança**
 - Data quality as code (Great Expectations)
 - Mecanismos de privacy-by-design (anonimização)
 - RBAC com integração ao IAM corporativo
 
 ---
 
-## **✨ Diferenciais Exclusivos**
+## **Diferenciais Exclusivos**
 
 ▸ **Time-to-value acelerado** - implantações em 8 semanas  
 ▸ **Modelo flexível** - cloud, hybrid ou multi-cloud  
@@ -245,7 +245,7 @@ Oferecemos uma plataforma integrada de dados que unifica coleta, processamento, 
 
 ---
 
-## **📌 Benefícios Mensuráveis**
+## **Benefícios Mensuráveis**
 
 • **+40%** de eficiência em projetos analíticos  
 • **-60%** no tempo de preparação de dados  
@@ -254,7 +254,7 @@ Oferecemos uma plataforma integrada de dados que unifica coleta, processamento, 
 
 ---
 
-## **🎯 Para Quem?**
+## **Para Quem?**
 
 ✓ Empresas em transformação digital  
 ✓ Equipes que gastam >50% do tempo com ETL  
@@ -269,43 +269,43 @@ Oferecemos desenvolvimento full-stack sob medida para transformar suas ideias em
 
 ---
 
-## **🛠️ Nossas Capacidades**
+## **Nossas Capacidades**
 
-### **🌐 Front-end Moderno**
+### **Front-end Moderno**
 - Aplicações React, Angular ou Vue.js
 - PWA (Progressive Web Apps)
 - Design responsivo e UI/UX otimizado
 - Micro frontends
 
-### **⚙️ Back-end Poderoso**
+### **Back-end Poderoso**
 - APIs RESTful e GraphQL
 - Microsserviços com Node.js, Python ou .NET
 - Bancos SQL (PostgreSQL) e NoSQL (MongoDB)
 - Autenticação e autorização (JWT, OAuth)
 
-### **☁️ Infraestrutura & DevOps**
+### **Infraestrutura & DevOps**
 - CI/CD automatizado (GitHub Actions, Jenkins)
 - Containers (Docker) e orquestração (Kubernetes)
 - Cloud (AWS, Azure, GCP) ou on-premise
 - Monitoramento e logging
 
-### **📱 Mobile Híbrido**
+### **Mobile Híbrido**
 - Aplicações React Native
 - Integração com APIs nativas
 - Publicação nas stores
 
 ---
 
-## **✨ Por Que Escolher Nosso Serviço?**
+## **Por Que Escolher Nosso Serviço?**
 
-✅ **Time completo** - designers, desenvolvedores e QA  
-✅ **Metodologia ágil** - sprints quinzenais com entregas contínuas  
-✅ **Código limpo** - seguindo melhores práticas e padrões  
-✅ **Suporte pós-entrega** - manutenção e evolução  
+ **Time completo** - designers, desenvolvedores e QA  
+ **Metodologia ágil** - sprints quinzenais com entregas contínuas  
+ **Código limpo** - seguindo melhores práticas e padrões  
+ **Suporte pós-entrega** - manutenção e evolução  
 
 ---
 
-## **📌 Projetos Típicos**
+## **Projetos Típicos**
 
 - Sistemas de gestão empresarial (ERP customizado)  
 - Plataformas de e-commerce  
@@ -315,7 +315,7 @@ Oferecemos desenvolvimento full-stack sob medida para transformar suas ideias em
 
 ---
 
-## **🔄 Nosso Processo**
+## **Nosso Processo**
 
 1. **Discovery** - entendimento do negócio e requisitos  
 2. **Prototipagem** - validação de conceito  
