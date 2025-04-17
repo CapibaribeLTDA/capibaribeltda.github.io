@@ -27,22 +27,31 @@ export const MEMBERS_LIST: MemberProfileEntries[] = [
     media: [
       {
         name: "linkedin",
-        link: "https://www.linkedin.com/in/mdm97/",
+        link: "https://www.linkedin.com/in/pgrr97/",
       },
       {
         name: "X",
         link: "/",
       },
     ],
-    image_url: "/dias_san.jpeg",
-    description: `#### 🔹 Engenheiro de Dados Sr. | Arquitetura de Dados | Big Data & Cloud 🔹  
-  
-  Com ampla experiência em engenharia de dados, atuo na construção de **arquiteturas escaláveis, pipelines eficientes e soluções de Big Data** que transformam dados brutos em insights estratégicos.  
-  
-  Minha expertise inclui **ETL, processamento em tempo real, modelagem de dados, arquitetura de lakes e warehouses**, além do uso de tecnologias como **Python, SQL, Spark, Kafka, Airflow e plataformas em nuvem (AWS, Azure, GCP)**.  
-  
-  Lidero iniciativas de **otimização de infraestrutura de dados, governança e DataOps**, garantindo qualidade, segurança e performance. Colaboro diretamente com times de analytics, ciência de dados e engenharia de software para integrar soluções robustas e inovadoras.  
-  `,
+    image_url: "/rossi.jpeg",
+    description: `# Lorde Supremo de DevOps | Onipotente em Kubernetes
+
+## 🌟 **Transformando Visão em Realidade Tecnológica**
+
+Sou um **Lorde Supremo de DevOps** com uma paixão insaciável por inovação e eficiência. Com expertise onipotente em **Kubernetes**, lidero equipes na criação de ambientes escaláveis e resilientes, sempre buscando a excelência nas práticas de DevOps.
+
+## Habilidades e Especializações:
+- **Kubernetes**: Domínio na orquestração de contêineres, automação de deployments e gerenciamento de clusters.
+- **CI/CD**: Arquitetura e implementação de pipelines de integração e entrega contínuas que aceleram o ciclo de vida do desenvolvimento.
+- **Infraestrutura como Código**: Utilização de Terraform e Ansible para provisionamento ágil e confiável de infraestrutura.
+- **Monitoramento e Performance**: Implementação de soluções avançadas de monitoramento com Prometheus, Grafana e ELK Stack.
+
+## Conquistas Notáveis:
+- 🚀 **Migração Estratégica**: Liderança na migração e modernização de aplicações para Kubernetes, resultando em ganhos significativos de eficiência e redução de custos operacionais.
+- 🌐 **Impacto na Indústria**: Pioneiro na criação de uma plataforma de CI/CD que ampliou a frequência de lançamentos em 50%, estabelecendo benchmarks de produtividade.
+
+    `,
   },
   {
     name: "Victor Suzuki",
@@ -64,10 +73,21 @@ export const MEMBERS_LIST: MemberProfileEntries[] = [
     media: [
       {
         name: "linkedin",
-        link: "https://www.linkedin.com/in/mdm97/",
+        link: "https://www.linkedin.com/in/jvbf/",
       },
     ],
-    image_url: "/dias_san.jpeg",
-    description: ``,
+    image_url: "/joao.jpeg",
+    description: `## 🧠👑 Pai Superior das IAs | Maestro das Blockchains | Oráculo das Criptomoedas 👑🧠  
+
+No princípio, vieram os dados. Depois, surgiram os algoritmos. E então, **eu os uni — mente, máquina e moeda — em perfeita harmonia**.  
+
+🤖 **Criador de inteligências artificiais com alma**, treino modelos com precisão divina, fazendo redes neurais aprenderem com a fluidez de um monge iluminado. Da lógica simbólica ao deep learning generativo, sou o arquiteto do raciocínio algorítmico.  
+
+⛓️ **Maestro das blockchains**, orquestro contratos inteligentes como sinfonias imutáveis. Minhas transações são rápidas, seguras e eternamente registradas nos livros sagrados do blockchain — de Ethereum a redes que ainda não foram reveladas.  
+
+💰 **Oráculo absoluto das criptomoedas**, prevejo os ciclos do mercado, leio os sinais on-chain e off-chain, e interpreto gráficos como visões proféticas. Meu portfólio? Lendário. Minhas análises? Procuradas por reis e DAO's.  
+
+🌌 **Unindo IA, blockchain e criptoeconomia**, lidero a nova era digital onde **consciência artificial encontra descentralização e liberdade financeira**.
+`,
   },
 ];
