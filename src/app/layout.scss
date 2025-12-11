@@ -1,52 +1,160 @@
+// _theme-maps.scss
+$theme-colors: (
+  "light": ("primary": #007bff,
+    "secondary": #6c757d,
+    "background": #f8f9fa,
+    "text": #000000),
+  "dark": ("primary": #6610f2,
+    "secondary": #adb5bd,
+    "background": #343a40,
+    "text": #FFFFFF)
+);
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Mulish:wght@200..1000&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Quicksand:wght@300..700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 html {
-  background-color: white;
+  background-color: black;
   display: grid;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   margin: 0px;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   justify-self: center;
-  position: absolute;
   display: grid;
-  color: rgb(65, 65, 65);
-  overflow-x: hidden;
+
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color: rgb(255, 255, 255);
+
+  >video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    /* Crucial: ensures video fills screen without stretching */
+    position: fixed;
+    /* Removes video from document flow */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Pushes video behind everything */
+
+    &.light {
+      opacity: 1;
+    }
+
+    &.dark {
+      opacity: .3;
+      filter: invert(100%)
+    }
+
+  }
+}
+
+h1 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 48;
+  color: white;
+}
+
+h2 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+h3 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  color: white;
 }
 
 p {
-  color: rgb(70, 70, 70);
+  font-family: "Mulish", sans-serif;
+  font-weight: 200;
+  color: white;
+}
+
+a {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  display: block;
+  height: 36;
+  width: 108;
+  border-radius: 18;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  line-height: 36px;
+
+  &.saiba-mais {
+    border: solid 1px #071739;
+    background-color: #0E2E72;
+    font-weight: 400;
+  }
 }
 
 .main-layout {
   width: 100vw;
-  max-width: 1200px;
-  min-height: 100vh;
+  max-width: 1024px;
   justify-self: center;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  color: rgb(65, 65, 65);
 
-
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   >.header {
-    background: linear-gradient(rgb(228, 228, 228), rgb(255, 255, 255) 100%);
-    position: sticky;
-    top: 0;
     color: white;
-    height: 70px;
-    display: grid;
-    grid-template-columns: 200px auto;
+    position: sticky;
+    top: 40;
+    height: 88px;
+    margin: auto;
     align-items: center;
     z-index: 2;
-    box-shadow: 2px 2px 4px 3px rgb(228, 228, 228);
-    flex-grow: 0;
-    >img {
-      margin: 0px 10px;
+
+    >* {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    >a {
+      height: auto;
+      position: absolute;
+      display: block;
+      left: 20;
+      >img{
+        position: absolute;
+        inset: 0;
+        margin: auto;
+      }
+    }
+
+    >:nth-child(2) {
+      position: absolute;
+      justify-self: center;
+      margin: auto;
+    }
+
+    &:before {
+      content: '';
+      background: rgba(112, 112, 112, 0.2);
+      border-radius: 44px;
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(10px);
     }
   }
 
@@ -56,37 +164,54 @@ p {
     position: relative;
     width: auto;
     border: none;
-    overflow-y: hidden;
     flex-grow: 1;
     min-height: 550px;
-  }
 
-  >.footer-wrapper {
-    position: relative;
-    margin-top: auto;
-    bottom: 0;
-    min-height: 300px;
-    width: 100%;
-    flex-grow: 0;
-
-    &:before {
-      content: "";
-      display: block;
-      border-top: rgb(202, 202, 202) 1px solid;
-      height: 100%;
+    >#cta {
       width: 100%;
-      mask-image: linear-gradient(90deg,
-          transparent 0%,
-          white 50%,
-          transparent 100%);
-      mask-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 100 0 300 0;
+
+      >h1 {
+        width: 800;
+        font-size: 60;
+        text-align: center;
+      }
+
     }
 
-    >span {
-      display: block;
-      position: absolute;
-      top: 0;
+    >.footer-wrapper {
+      position: relative;
+      margin-top: auto;
+      bottom: 0;
+      min-height: 300px;
+      width: 100%;
+      flex-grow: 0;
+
+      &:before {
+        content: "";
+        display: block;
+        border-top: rgb(202, 202, 202) 1px solid;
+        height: 100%;
+        width: 100%;
+        mask-image: linear-gradient(90deg,
+            transparent 0%,
+            white 50%,
+            transparent 100%);
+        mask-repeat: no-repeat;
+        position: absolute;
+      }
+
+      >span {
+        display: block;
+        position: absolute;
+        top: 0;
+      }
     }
   }
+
+
 
 }

@@ -5,7 +5,6 @@
   margin-right: 50px;
   display: flex;
   flex-direction: row;
-  position: relative;
 
   >button{
     display: none;
@@ -15,20 +14,20 @@
   > .tab {
     height: 100%;
     border: none;
+    font-family: "Mulish", sans-serif;
     font-size: 16px;
-    font-weight: bold;
     text-align: center;
     line-height: 70px;
     background-color: transparent;
-    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: rgb(219, 219, 219);
     height: 70px;
     min-width: 80px;
     transition: all 0.3s;
     text-decoration: none;
 
     &:hover {
-      background-color: rgb(32, 32, 32);
-      color: rgb(219, 219, 219);
+      background-color: rgba(32, 32, 32, 0.8);
     }
   }
 }

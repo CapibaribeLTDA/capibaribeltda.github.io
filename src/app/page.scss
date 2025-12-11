@@ -5,22 +5,76 @@
   min-height: 800px;
   display: flex;
   flex-direction: column;
+  gap: 60;
+
+  >h1{
+    width: 800;
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    align-self: center;
+    color: white;
+    font-size: 60;
+    margin-top: 150px;
+    margin-bottom: 250px;
+  }
+
+  >div{
+    margin: 5px 0;
+    padding: 10px 0;
+  }
+}
+
+#solutions {
+  height: auto;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+
+  >*{
+    padding: 10px;
+  }
+
+  #cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+#reason {
+  width: 100%;
+
+  >h1{
+    font-size: 48px;
+  }
+
+  >.reason-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 30;
+
+    >h2{
+      font-size: 36px;
+      margin: 0;
+    }
+
+    >p{
+      margin: 0;
+    }
+  }
+}
+
+#stories {
+  width: 100%;
 
   >h1{
     text-align: center;
   }
 }
 
-#frame1 {
-  padding: 15px;
-  height: max-content;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-evenly;
-  gap: 10px;
-  flex-grow: 1;
-}
 
 @media only screen and (width <= 1000px){
   #frame1{

@@ -100,3 +100,118 @@ Uma boa documentação garante **transparência, padronização e eficiência** 
   },
 };
 
+export type ProductItem = {
+  name: string,
+  description: string,
+  iconUrl: string,
+  path: string
+}
+
+export type TextItem = {
+  title: string,
+  description: string
+}
+
+export const PRODUCTS_LIST: ProductItem[] = [
+  {
+    name: "Infraestrutura de dados",
+    description: "Projetamos, implementamos e otimizados infraestrutura de dados end-to-end com alta disponibilidade, segurança e performance.",
+    iconUrl: "/icons/services/infra.png",
+    path: "/services/data-infrastructure"
+  },
+  {
+    name: "Análise de dados",
+    description: "Extraímos valor dos seus dados para revelar oportunidades, facilitar o planejamento e impulsionar resultados estratégicos.",
+    iconUrl: "/icons/services/analysis.png",
+    path: "/services/data-analysis"
+  },
+  {
+    name: "Arquitetura de dados",
+    description: "Projetamos, implementamos e otimizados infraestrutura de dados end-to-end com alta disponibilidade, segurança e performance.",
+    iconUrl: "/icons/services/architecture.png",
+    path: "/services/data-architecture"
+  },
+  {
+    name: "Aplicação de IA e ML",
+    description: "Projetamos, implementamos e otimizados infraestrutura de dados end-to-end com alta disponibilidade, segurança e performance.",
+    iconUrl: "/icons/services/ia.png",
+    path: "/services/ia-n-ml"
+  },
+  {
+    name: "Plataforma de dados",
+    description: "Projetamos, implementamos e otimizados infraestrutura de dados end-to-end com alta disponibilidade, segurança e performance.",
+    iconUrl: "/icons/services/data_eng.png",
+    path: "/services/data-platform"
+  },
+  {
+    name: "Desenvolvimento Full-Stack",
+    description: "Oferecemos desenvolvimento sob medida para transformar suas ideias em aplicações robustas e escaláveis",
+    iconUrl: "/icons/services/full_stack.png",
+    path: "/services/full-stack"
+  }
+]
+
+export const REASONS = {
+  title: "Porque a CapibaribeTI?",
+  items: [
+    {
+      title: "Soluções Sob Medida",
+      description: "Entregamos o ciclo completo: da arquitetura de dados à aplicação final, feito exclusivamente para o seu desafio, sem pacotes genéricos."
+    },
+    {
+      title: "Foco em Crescimento e ROI",
+      description: "Nosso objetivo é aumentar a sua receita e otimizar custos. Cada projeto é desenhado para gerar um Retorno sobre o Investimento (ROI) claro e mensurável."
+    }, {
+      title: "Qualidade, Velocidade e Governança",
+      description: "Implementações ágeis e escaláveis (TTV Acelerado), combinadas com código limpo, seguindo a LGPD"
+    }
+  ]
+}
+
+export const STORIES = {
+  title: "Histórias de sucesso",
+  historias: [
+    {
+      iconURL: "",
+      projectName: "Gov Hub",
+      client: "UNB - Lab Livre",
+      description: "Arquitetura da versão inicial da infraestrutura e treinamento dos membros do laboratório",
+      link: "https://gov-hub.io/"
+    }
+  ]
+}
+
+export const SERVICES_DETAILS = {
+  dataAnalysis: {
+    title: "Análise de Dados",
+    description: "Descrição da análise de dados",
+    items: [
+      {
+        title: "Dashboards e relatórios",
+        description: "Paineis personalizados e relatórios feitos sob medida para atender às necessidades da sua operação."
+      },
+      {
+        title: "Tratamento de dados",
+        description: "Revisão e organização do banco de dados."
+      }
+    ],
+    benefits: [
+      {
+        title: "Decisões mais rápidas",
+        description: "Entenda de forma imediata a situação do seu negócio"
+      },
+      {
+        title: "Previsibilidades de custos",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      },
+      {
+        title: "Transparência",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      },
+      {
+        title: "Previsibilidades de custos",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      }
+    ]
+  }
+}

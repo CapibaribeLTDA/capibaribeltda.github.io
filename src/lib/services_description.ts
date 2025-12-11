@@ -146,7 +146,7 @@ Projetamos e implementamos **arquiteturas de dados modernas** que unem desempenh
   `,
     },
     {
-      name: "Aplicações de IA e AM",
+      name: "Aplicações de IA e ML",
       description: `# **Transforme dados em inteligência operacional com soluções de IA prontas para negócios**
 
 Desenvolvemos aplicações de inteligência artificial customizadas que resolvem desafios reais - desde automação de processos até sistemas de decisão preditiva. Combinamos técnicas de ML avançado com domínio de negócios para entregar valor tangível.
@@ -241,15 +241,15 @@ Oferecemos uma plataforma integrada de dados que unifica coleta, processamento, 
 ▸ **Time-to-value acelerado** - implantações em 8 semanas  
 ▸ **Modelo flexível** - cloud, hybrid ou multi-cloud  
 ▸ **SLA 99.95%** para workloads críticos  
-▸ **Suporte 24/7** com especialistas em dados  
+▸ **Suporte** com especialistas em dados  
 
 ---
 
 ## **Benefícios Mensuráveis**
 
-• **+40%** de eficiência em projetos analíticos  
-• **-60%** no tempo de preparação de dados  
-• **Redução de 35%** em custos de infraestrutura  
+• Eficiência em projetos analíticos  
+• Redução no tempo de preparação de dados  
+• Redução em custos de infraestrutura  
 • **100%** compliance com LGPD/GDPR  
 
 ---
@@ -271,13 +271,13 @@ Oferecemos desenvolvimento full-stack sob medida para transformar suas ideias em
 
 ## **Nossas Capacidades**
 
-### **Front-end Moderno**
+### **Front-end**
 - Aplicações React, Angular ou Vue.js
 - PWA (Progressive Web Apps)
 - Design responsivo e UI/UX otimizado
 - Micro frontends
 
-### **Back-end Poderoso**
+### **Back-end**
 - APIs RESTful e GraphQL
 - Microsserviços com Node.js, Python ou .NET
 - Bancos SQL (PostgreSQL) e NoSQL (MongoDB)

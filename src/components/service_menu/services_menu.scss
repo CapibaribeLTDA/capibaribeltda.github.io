@@ -1,0 +1,28 @@
+.services-menu {
+
+    position: sticky;
+    top: 120;
+    height: 400px;
+
+    >.services-list {
+        border-left: gray 2px solid;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        >.service-link {
+            margin-left: 15px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 10px;
+            width: fit-content;
+            border-radius: 15px;
+            border: 1px rgb(78, 128, 233) solid;
+            background: transparent;
+
+            &:hover {
+                background-color: rgba(78, 128, 233, 0.3);
+            }
+        }
+    }
+}

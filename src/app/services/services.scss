@@ -1,99 +1,201 @@
 .services-page {
-    >.services-panel {
-        padding: 15px;
-        display: grid;
-        grid-template-columns: auto auto;
-        column-gap: 15px;
+  >.services-panel {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
 
-        >.list-switch {
-            display: none;
-        }
-
-        >.services-list {
-            display: flex;
-            width: 200px;
-            flex-direction: column;
-
-            >button {
-                padding: 10px;
-                border: none;
-                background-color: rgb(245, 245, 245);
-                text-align: left;
-                font-size: 1rem;
-                z-index: 1;
-
-                &.active {
-                    background-color: white;
-                    box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
-                    z-index: 2;
-                }
-
-                &:hover {
-                    box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
-                    z-index: 2;
-                }
-            }
-        }
+    >.list-switch {
+      display: none;
     }
+
+    >.services-list {
+      display: flex;
+      width: 200px;
+      flex-direction: column;
+
+      >button {
+        padding: 10px;
+        border: none;
+        background-color: rgb(245, 245, 245);
+        text-align: left;
+        font-size: 1rem;
+        z-index: 1;
+
+        &.active {
+          background-color: white;
+          box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
+          z-index: 2;
+        }
+
+        &:hover {
+          box-shadow: 2px 2px 5px 3px rgb(228, 228, 228);
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
+
+.service {
+  margin: 50 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100;
+
+  >.service-title {
+    margin: 100 0 100 0;
+    width: 800;
+    align-self: center;
+    text-align: center;
+  }
+
+  >.offers {
+    >h2{
+      font-size: 36;
+    }
+    >.offers-list {
+      >.offer-item {
+        position: relative;
+        padding: 10px 0;
+
+        &:before {
+          content: "";
+          display: block;
+          border-bottom: rgb(105, 105, 105) 1px solid;
+          height: 100%;
+          width: 100%;
+          mask-image: linear-gradient(90deg,
+              transparent 0%,
+              white 50%,
+              transparent 100%);
+          mask-repeat: no-repeat;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  >.benefits {
+
+    >h2{
+      font-size: 36;
+    }
+
+    >.benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      >.benefit-item {
+        position: relative;
+        padding: 15px;
+
+        >.icon {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          background-color: #0E2E72;
+          text-align: center;
+          font-size: 20;
+          line-height: 42px;
+        }
+
+        &:before {
+          content: "";
+          display: block;
+          border-left: rgb(105, 105, 105) 1px solid;
+          height: 100%;
+          width: 100%;
+          left: -15px;
+          mask-image: linear-gradient(transparent 0%,
+              white 50%,
+              transparent 100%);
+          mask-repeat: no-repeat;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  >.carrosel-container {
+
+    >h2{
+      font-size: 36px;
+    }
+
+    >.carrosel {
+      display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+      gap: 20px;
+
+      >* {
+        flex-shrink: 0;
+        width: 350;
+        height: auto;
+      }
+    }
+  }
 }
 
 @media only screen and (width <=600px) {
-    .services-page {
-        >.services-panel {
-            height: 65vh;
-            column-gap: 5px;
+  .services-page {
+    >.services-panel {
+      height: 65vh;
+      column-gap: 5px;
 
-            >.list-switch {
-                display: block;
-                border: none;
-                border-radius: 10px;
-                background-color: white;
-                box-shadow: 1px 0px 2px 0px rgb(228, 228, 228);
-                >img{
-                    transition: rotate 0.5s;
-                    rotate: 0;
-                }
+      >.list-switch {
+        display: block;
+        border: none;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 1px 0px 2px 0px rgb(228, 228, 228);
 
-                &.active {
-                    box-shadow: 1px 1px 4px 2px rgb(228, 228, 228);
-                    >img{
-                        rotate: -180deg;
-                    }
-                }
-            }
-
-            >.services-list {
-                width: 0px;
-                transition: width 0.3s;
-                opacity: 0;
-                overflow: hidden;
-
-                &.active {
-                    width: 200px;
-                    opacity: 1;
-                    transition: opacity 0.05s, width 0.3s;
-                    transition-delay: 0.3s, 0s;
-                }
-            }
-
-            >.service-description {
-                --mask-margin: 10px;
-                opacity: 1;
-                overflow: scroll;
-                transition: opacity 0.5s;
-                transition-delay: 0.3s;
-                mask-image: linear-gradient(
-                    transparent 0%, 
-                    white var(--mask-margin), 
-                    white calc(100% - var(--mask-margin)), 
-                    transparent 100%);
-
-                &.inactive {
-                    opacity: 0;
-                    transition: opacity 0s;
-                }
-            }
+        >img {
+          transition: rotate 0.5s;
+          rotate: 0;
         }
 
+        &.active {
+          box-shadow: 1px 1px 4px 2px rgb(228, 228, 228);
+
+          >img {
+            rotate: -180deg;
+          }
+        }
+      }
+
+      >.services-list {
+        width: 0px;
+        transition: width 0.3s;
+        opacity: 0;
+        overflow: hidden;
+
+        &.active {
+          width: 200px;
+          opacity: 1;
+          transition: opacity 0.05s, width 0.3s;
+          transition-delay: 0.3s, 0s;
+        }
+      }
+
+      >.service-description {
+        --mask-margin: 10px;
+        opacity: 1;
+        overflow: scroll;
+        transition: opacity 0.5s;
+        transition-delay: 0.3s;
+        mask-image: linear-gradient(transparent 0%,
+            white var(--mask-margin),
+            white calc(100% - var(--mask-margin)),
+            transparent 100%);
+
+        &.inactive {
+          opacity: 0;
+          transition: opacity 0s;
+        }
+      }
     }
+
+  }
 }

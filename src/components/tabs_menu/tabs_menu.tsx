@@ -4,6 +4,8 @@ import Link from "next/link";
 import "./tabs_menu.scss";
 import { useState } from "react";
 import { useOutsideClick } from "@/lib/custom_hooks/useOutsideClick";
+import Dropdown from "../dropdown/dropdown";
+import { ProductItem, PRODUCTS_LIST } from "@/lib/pt_text";
 
 export const TabsMenu = () => {
   const [menuOpen, updateMenu] = useState<boolean>(false);
@@ -18,15 +20,14 @@ export const TabsMenu = () => {
       ref={ref}
     >
       <button onClick={() => updateMenu(!menuOpen)}/>
-      <Link className="tab" href="/" onClick={() => updateMenu(false)}>
-        Início
-      </Link>
       <Link className="tab" href="/about" onClick={() => updateMenu(false)}>
         Sobre
       </Link>
-      <Link className="tab" href="/services" onClick={() => updateMenu(false)}>
-        Serviços
-      </Link>
+      <Dropdown
+        label="Serviços"
+        options={PRODUCTS_LIST}
+        onSelect={(item: ProductItem) => item.path}
+      />
       <Link className="tab" href="/contact" onClick={() => updateMenu(false)}>
         Contato
       </Link>
