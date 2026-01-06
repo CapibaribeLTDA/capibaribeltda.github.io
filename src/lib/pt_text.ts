@@ -213,5 +213,165 @@ export const SERVICES_DETAILS = {
         description: "Preveja as flutuações nas finanças da sua empresa"
       }
     ]
+  },
+  dataArchitecture: {
+    title: "Arquitetura de Dados",
+    description: "Descrição da análise de dados",
+    items: [
+      {
+        title: "Dashboards e relatórios",
+        description: "Paineis personalizados e relatórios feitos sob medida para atender às necessidades da sua operação."
+      },
+      {
+        title: "Tratamento de dados",
+        description: "Revisão e organização do banco de dados."
+      }
+    ],
+    benefits: [
+      {
+        title: "Decisões mais rápidas",
+        description: "Entenda de forma imediata a situação do seu negócio"
+      },
+      {
+        title: "Previsibilidades de custos",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      },
+      {
+        title: "Transparência",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      },
+      {
+        title: "Previsibilidades de custos",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      }
+    ]
+  },
+  dataInfrastructure: {
+    title: "Infraestrutura de Dados",
+    description: "Descrição da análise de dados",
+    items: [
+      {
+        title: "Dashboards e relatórios",
+        description: "Paineis personalizados e relatórios feitos sob medida para atender às necessidades da sua operação."
+      },
+      {
+        title: "Tratamento de dados",
+        description: "Revisão e organização do banco de dados."
+      }
+    ],
+    benefits: [
+      {
+        title: "Decisões mais rápidas",
+        description: "Entenda de forma imediata a situação do seu negócio"
+      },
+      {
+        title: "Previsibilidades de custos",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      },
+      {
+        title: "Transparência",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      },
+      {
+        title: "Previsibilidades de custos",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      }
+    ]
+  },
+  AIApplications: {
+    title: "Aplicações de IA e ML",
+    description: "Descrição da análise de dados",
+    items: [
+      {
+        title: "Dashboards e relatórios",
+        description: "Paineis personalizados e relatórios feitos sob medida para atender às necessidades da sua operação."
+      },
+      {
+        title: "Tratamento de dados",
+        description: "Revisão e organização do banco de dados."
+      }
+    ],
+    benefits: [
+      {
+        title: "Decisões mais rápidas",
+        description: "Entenda de forma imediata a situação do seu negócio"
+      },
+      {
+        title: "Previsibilidades de custos",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      },
+      {
+        title: "Transparência",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      },
+      {
+        title: "Previsibilidades de custos",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      }
+    ]
+  },
+  dataPlatform: {
+    title: "Plataforma de Dados",
+    description: "Descrição da análise de dados",
+    items: [
+      {
+        title: "Dashboards e relatórios",
+        description: "Paineis personalizados e relatórios feitos sob medida para atender às necessidades da sua operação."
+      },
+      {
+        title: "Tratamento de dados",
+        description: "Revisão e organização do banco de dados."
+      }
+    ],
+    benefits: [
+      {
+        title: "Decisões mais rápidas",
+        description: "Entenda de forma imediata a situação do seu negócio"
+      },
+      {
+        title: "Previsibilidades de custos",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      },
+      {
+        title: "Transparência",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      },
+      {
+        title: "Previsibilidades de custos",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      }
+    ]
+  },
+  fullStack: {
+    title: "Desenvolvimento full-stack",
+    description: "Descrição da análise de dados",
+    items: [
+      {
+        title: "Dashboards e relatórios",
+        description: "Paineis personalizados e relatórios feitos sob medida para atender às necessidades da sua operação."
+      },
+      {
+        title: "Tratamento de dados",
+        description: "Revisão e organização do banco de dados."
+      }
+    ],
+    benefits: [
+      {
+        title: "Decisões mais rápidas",
+        description: "Entenda de forma imediata a situação do seu negócio"
+      },
+      {
+        title: "Previsibilidades de custos",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      },
+      {
+        title: "Transparência",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      },
+      {
+        title: "Previsibilidades de custos",
+        description: "Preveja as flutuações nas finanças da sua empresa"
+      }
+    ]
   }
 }

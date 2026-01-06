@@ -6,10 +6,12 @@ const title = "Oferecemos a solução que você precisa"
 const description = "Tem um desafio? Temos a solução. Escolha sua necessidade e descubra nossos serviços sob medida."
 
 const SERVICES_LIST = [
-  "serviço 1",
-  "serviço 2",
-  "serviço 3",
-  "serviço 4"
+  "Quero ter uma IA para minha empresa",
+  "Precido analisar e interpretar meus dados",
+  "Quero estruturar e organizar meus dados",
+  "Gostaria de construir uma solução",
+  "Preciso armazenar, integrar ou protegeer meus dados",
+  "Queria uma solução para gerenciar meus dados"
 ]
 
 export default function ServicesMenu() {

@@ -1,7 +1,51 @@
-.contact-page{
-    inset: 5px;
-    position: absolute;
-    iframe{
-        height: 100%;
+.contact-page {
+    margin: 50 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20;
+
+    >.service-title {
+        margin: 10 0 10 0;
+        width: 800;
+        align-self: center;
+        text-align: center;
+    }
+
+    >button {
+        height: 2.5rem;
+        width: 5rem;
+        border-radius: 1.5rem;
+        align-self: flex-end;
+        color: rgba(255, 255, 255, 0.8);
+        background-color: rgb(0, 0, 0, 0.5);
+        border: none;
+        box-shadow: rgba(255, 255, 255, 0.55) 0 0 10 3;
+        transition: all 0.15s ease-in-out;
+
+        &:hover {
+            background-color: rgba(245, 245, 245, 0.7);
+            color: black
+        }
+
+        &:active {
+            background-color: rgb(75, 75, 75, 0.5);
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+
+.input-wrapper {
+    >textarea {
+        height: 3rem;
+        width: 100%;
+        font-family: 'Mulish';
+        font-size: 1rem;
+        font-weight: 100;
+        padding: 0 10;
+        color: rgba(255, 255, 255, 0.8);
+        background: rgba(0, 0, 0, 0.6);
+        border: rgba(255, 255, 255, 0.5) solid 1px;
+        border-radius: 15px;
+        resize: none;
     }
 }

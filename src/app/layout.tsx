@@ -28,7 +28,7 @@ export default function RootLayout({
             {children}
             <div id="cta" className="">
               <h1>Potencialize conosco o crescimento do seu negócio.</h1>
-              <a className="saiba-mais">Fale conosco</a>
+              <a className="saiba-mais" href='/contact'>Fale conosco</a>
             </div>
             <div className="footer-wrapper">
               <Footer />
