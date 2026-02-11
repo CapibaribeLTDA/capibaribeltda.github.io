@@ -1,13 +1,13 @@
 'use client'
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { ServiceTitle } from '../services/page';
 import './contact.scss';
 
 const FormInput = ({
   title,
   height="3rem",
-  onChange=() => {},
+  onChange = () => {},
   rows
 }: {
   title: string, 
@@ -27,7 +27,7 @@ const FormInput = ({
   };
 
   // Use useEffect to manage the timeout logic
-  useEffect(() => {
+  useCallback(() => {
     // Set a timeout to update the debounced value after a delay
     const timeoutId = setTimeout(() => {
       // setDebouncedValue(text);

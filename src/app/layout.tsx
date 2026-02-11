@@ -2,6 +2,7 @@
 
 import './layout.scss';
 import Image from 'next/image';
+import Link from 'next/link';
 import { TabsMenu } from "@/components/tabs_menu/tabs_menu";
 import { Footer } from "@/components/footer/footer";
 import ThemeSwitch from '@/components/theme_switch/theme_switch';
@@ -29,9 +30,9 @@ export default function RootLayout({
         <video className={theme} src="/background/background_light.mp4" autoPlay={true} loop={true} muted playsInline={true} />
         <div className="main-layout">
           <div className="header">
-            <a href='/'>
+            <Link href='/'>
               <Image src={`/logo/${theme}/logo.png`} height={70} width={70} alt="Logo" fill={false}/>
-            </a>
+            </Link>
             <TabsMenu />
             <ThemeSwitch
               onChange={handleToggleTheme}
