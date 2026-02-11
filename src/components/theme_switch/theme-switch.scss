@@ -1,0 +1,96 @@
+// Theme Switch Styles
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 2rem;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-flex;
+  padding: 0;
+  align-items: center;
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #3b82f6;
+  }
+  
+  &.light {
+    background-color: #fef08a;
+    
+    &:focus {
+      box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #9ca3af;
+    }
+  }
+  
+  &.dark {
+    background-color: #092147;
+    
+    &:focus {
+      box-shadow: 0 0 0 2px #111827, 0 0 0 4px #092147;
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  
+  &.sun {
+    left: 0.5rem;
+    
+    &.visible {
+      color: #eab308;
+      opacity: 1;
+    }
+    
+    &.hidden {
+      color: #fef08a;
+      opacity: 0;
+    }
+  }
+  
+  &.moon {
+    right: 0.5rem;
+    
+    &.visible {
+      color: #092147;
+      opacity: 1;
+    }
+    
+    &.hidden {
+      color: #9ca3af;
+      opacity: 0;
+    }
+  }
+}
+
+.slider {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  
+  &.light {
+    transform: translateX(0.25rem);
+  }
+  
+  &.dark {
+    transform: translateX(2.75rem);
+  }
+}

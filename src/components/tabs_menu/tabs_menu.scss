@@ -1,8 +1,6 @@
 .tabs {
   height: 70px;
   min-width: 100px;
-  margin-left: auto;
-  margin-right: 50px;
   display: flex;
   flex-direction: row;
 
@@ -19,8 +17,8 @@
     text-align: center;
     line-height: 70px;
     background-color: transparent;
-    border-radius: 10px;
-    color: rgb(219, 219, 219);
+    border-radius: 35px;
+    color: inherit;
     height: 70px;
     min-width: 80px;
     transition: all 0.3s;

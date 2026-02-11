@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useOutsideClick } from "@/lib/custom_hooks/useOutsideClick";
 import Dropdown from "../dropdown/dropdown";
 import { ProductItem, PRODUCTS_LIST } from "@/lib/pt_text";
+import ThemeSwitch from "../theme_switch/theme_switch";
 
 export const TabsMenu = () => {
   const [menuOpen, updateMenu] = useState<boolean>(false);

@@ -2,7 +2,7 @@
 
     position: sticky;
     top: 120;
-    height: 400px;
+    height: fit-content;
 
     >.services-list {
         border-left: gray 2px solid;
@@ -11,14 +11,29 @@
         gap: 10px;
 
         >.service-link {
+            position: relative;
             margin-left: 15px;
             height: 30px;
             line-height: 30px;
+            color: var(--text-color);
             padding: 0 10px;
             width: fit-content;
             border-radius: 15px;
             border: 1px rgb(78, 128, 233) solid;
             background: transparent;
+            backdrop-filter: blur(5px);
+
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                border-radius: 15px;
+                height: 100%;
+                width: 100%;
+                background: var(--background-color);
+                opacity: 0.1;
+                z-index: -1;
+            }
 
             &:hover {
                 background-color: rgba(78, 128, 233, 0.3);

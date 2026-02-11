@@ -4,6 +4,8 @@ import './layout.scss';
 import Image from 'next/image';
 import { TabsMenu } from "@/components/tabs_menu/tabs_menu";
 import { Footer } from "@/components/footer/footer";
+import ThemeSwitch from '@/components/theme_switch/theme_switch';
+import { useState } from 'react';
 
 
 export default function RootLayout({
@@ -12,7 +14,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const theme = 'dark';
+  const [theme, setTheme] = useState<'dark' | 'light'>('light');
+
+  const handleToggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    setTheme(newTheme);
+    localStorage.setItem('user-theme', newTheme);
+  }
+
   return (
     <html lang="pt-br" suppressHydrationWarning>
       <body>
@@ -20,9 +30,13 @@ export default function RootLayout({
         <div className="main-layout">
           <div className="header">
             <a href='/'>
-              <Image src="/logo/dark/logo.png" width={70.77} height={56} alt="Logo" />
+              <img src={`/logo/${theme}/logo.png`} width={70} alt="Logo" />
             </a>
             <TabsMenu />
+            <ThemeSwitch
+              onChange={handleToggleTheme}
+              theme={theme}
+            />
           </div>
           <div className="main-content">
             {children}

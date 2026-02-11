@@ -16,12 +16,33 @@ $theme-colors: (
 // @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Quicksand:wght@300..700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
+
+/* Light theme variables */
+[data-theme="light"] {
+  --primary-color: #6610f2;
+  --secondary-color: #adb5bd;
+  --background-color: rgb(219, 219, 219);
+  --background-filter: none;
+  --text-color: #000000;
+
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+  --primary-color: #14f210;
+  --secondary-color: #adb5bd;
+  --background-color: black;
+  --background-filter: invert(90%);
+  --text-color: rgb(219, 219, 219);
+}
+
 html {
-  background-color: black;
+  background-color: var(--background-color);
   display: grid;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
 
 body {
   background-color: transparent;
@@ -30,11 +51,10 @@ body {
   height: auto;
   justify-self: center;
   display: grid;
-
+  color: var(--text-color);
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: 200;
-  color: rgb(255, 255, 255);
 
   >video {
     width: 100%;
@@ -49,39 +69,38 @@ body {
     /* Pushes video behind everything */
 
     &.light {
-      opacity: 1;
+      opacity: .3;
     }
 
     &.dark {
       opacity: .3;
-      filter: invert(100%)
+      filter: invert(100%);
     }
-
   }
 }
 
 h1 {
   font-family: "Audiowide", sans-serif;
   font-size: 48;
-  color: white;
+  // color: var(--text-color);
 }
 
 h2 {
   font-family: "Mulish", sans-serif;
   font-weight: 500;
-  color: white;
+  // color: var(--text-color);
 }
 
 h3 {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
-  color: white;
+  // color: var(--text-color);
 }
 
 p {
   font-family: "Mulish", sans-serif;
   font-weight: 200;
-  color: white;
+  // color: var(--text-color);
 }
 
 a {
@@ -92,12 +111,13 @@ a {
   height: 36;
   width: 108;
   border-radius: 18;
-  color: rgb(255, 255, 255);
+  // color: var(--text-color);
   text-align: center;
   text-decoration: none;
   line-height: 36px;
 
   &.saiba-mais {
+    color: rgb(219, 219, 219);
     border: solid 1px #071739;
     background-color: #0E2E72;
     font-weight: 400;
@@ -115,35 +135,32 @@ a {
   }
 
   >.header {
-    color: white;
     position: sticky;
     top: 40;
     height: 88px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
     align-items: center;
     z-index: 2;
 
-    >* {
-      top: 50%;
-      transform: translateY(-50%);
-    }
+    // >* {
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    // }
 
     >a {
-      height: auto;
-      position: absolute;
+      height: 100%;
+      position: relative;
       display: block;
       left: 20;
-      >img{
+
+      >img {
         position: absolute;
         inset: 0;
         margin: auto;
       }
-    }
-
-    >:nth-child(2) {
-      position: absolute;
-      justify-self: center;
-      margin: auto;
     }
 
     &:before {
