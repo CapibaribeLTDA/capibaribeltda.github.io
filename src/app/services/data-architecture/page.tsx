@@ -1,6 +1,6 @@
 import { PRODUCTS_LIST, SERVICES_DETAILS } from '@/lib/pt_text';
 import '../services.scss';
-import { ServiceTitle, ServiceOffers, Benefits, Carrosel } from '../page';
+import { ServiceTitle, ServiceOffers, Benefits, Carrosel } from '../services_blocks';
 
 const THIS_SERVICE = SERVICES_DETAILS.dataArchitecture
 
