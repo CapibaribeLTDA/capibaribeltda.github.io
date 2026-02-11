@@ -30,7 +30,7 @@ export default function RootLayout({
         <div className="main-layout">
           <div className="header">
             <a href='/'>
-              <img src={`/logo/${theme}/logo.png`} width={70} alt="Logo" />
+              <Image src={`/logo/${theme}/logo.png`} height={70} width={70} alt="Logo" fill={false}/>
             </a>
             <TabsMenu />
             <ThemeSwitch

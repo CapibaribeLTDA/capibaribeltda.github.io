@@ -1,4 +1,5 @@
 import './service_card.scss';
+import Image from 'next/image';
 
 type ServiceCardProps = {
   iconURL: string,
@@ -14,7 +15,7 @@ export default function ServiceCard({
   return (
     <div className="service-card">
       <div className="content">
-        <img src={iconURL} height={79} width={79} />
+        <Image src={iconURL} height={79} width={79} alt='icon'/>
         <h2>{title}</h2>
         <p>{description}</p>
         <a className='saiba-mais'>Saiba mais</a>

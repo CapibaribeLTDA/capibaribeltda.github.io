@@ -1,4 +1,5 @@
 import './story_card.scss';
+import Image from 'next/image';
 
 type StoryCardProps = {
   iconURL: string,
@@ -18,7 +19,7 @@ export default function StoryCard({
   return (
     <div className="story-card">
       <div className="content">
-        <img src={iconURL} alt="icon" height={79} width={79} />
+        <Image src={iconURL} alt="icon" height={79} width={79} />
         <h2>{title}</h2>
         <h3>{subtitle}</h3>
         <p>{description}</p>

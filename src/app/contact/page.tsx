@@ -19,7 +19,7 @@ const FormInput = ({
   const [text, updateText] = useState<string>('');
 
   // State for the debounced value (updates after a pause in typing)
-  const [debouncedValue, setDebouncedValue] = useState('');
+  // const [debouncedValue, setDebouncedValue] = useState('');
 
   // Handle the immediate change as the user types
   const handleOnChange = (event: any) => {
@@ -72,8 +72,9 @@ export default function About() {
 
   const [form, updateForm] = useState<Form>(EMPTY_FORM)
 
-  const handleSend = (form: Form) => {
+  const handleSend = () => {
     // Send an email
+    console.log('Enviando formulário:', form);
   }
 
   return (
@@ -88,8 +89,8 @@ export default function About() {
       <FormInput 
         title='Descreva sua necessidade' 
         height='15rem' 
-        onChange={(text) => {updateForm({...form, mensagem: text})}}/>
-      <button>Enviar</button>
+        onChange={(text: string) => {updateForm({...form, mensagem: text})}}/>
+      <button onClick={handleSend}>Enviar</button>
     </div>
   );
 }

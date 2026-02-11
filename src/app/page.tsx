@@ -1,7 +1,6 @@
 "use client";
-import { PRODUCTS_LIST, REASONS, STORIES, TEXT_PT } from "@/lib/pt_text";
+import { PRODUCTS_LIST, REASONS, STORIES } from "@/lib/pt_text";
 import "./page.scss";
-import { HomeButton } from "@/components/home_button/home_button";
 import ServiceCard from "@/components/service_card/service_card";
 import ServicesMenu from "@/components/service_menu/services_menu";
 import StoryCard from "@/components/story_card/story_card";

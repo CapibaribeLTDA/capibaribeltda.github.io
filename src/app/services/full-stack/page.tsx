@@ -1,7 +1,6 @@
-import { PRODUCTS_LIST, SERVICES_DETAILS, TextItem } from '@/lib/pt_text';
+import { PRODUCTS_LIST, SERVICES_DETAILS } from '@/lib/pt_text';
 import '../services.scss';
 import { ServiceTitle, ServiceOffers, Benefits, Carrosel } from '../page';
-import ServiceCard from '@/components/service_card/service_card';
 
 const THIS_SERVICE = SERVICES_DETAILS.fullStack
 
