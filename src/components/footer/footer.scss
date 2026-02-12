@@ -28,7 +28,7 @@
           margin: 0.5rem 0;
   
           a {
-            color: #bbb;
+            color: var(--subtext-color);
             text-decoration: none;
             transition: color 0.3s;
   
@@ -87,7 +87,7 @@
       text-align: center;
       margin-top: 2rem;
       padding-top: 1rem;
-      color: #bbb;
+      color: var(--subtext-color);
 
       &:before {
         content: "";

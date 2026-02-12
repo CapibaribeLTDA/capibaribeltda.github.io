@@ -24,6 +24,7 @@ $theme-colors: (
   --background-color: rgb(219, 219, 219);
   --background-filter: none;
   --text-color: #000000;
+  --subtext-color: #333333;
 
 }
 
@@ -34,6 +35,7 @@ $theme-colors: (
   --background-color: black;
   --background-filter: invert(90%);
   --text-color: rgb(219, 219, 219);
+  --subtext-color: #bbb;
 }
 
 html {
