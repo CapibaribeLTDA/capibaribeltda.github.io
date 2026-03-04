@@ -117,37 +117,37 @@ export const PRODUCTS_LIST: ProductItem[] = [
     name: "Infraestrutura de dados",
     description: "Projetamos, implementamos e otimizados infraestrutura de dados end-to-end com alta disponibilidade, segurança e performance.",
     iconUrl: "/icons/services/infra.png",
-    path: "/services/data-infrastructure"
+    path: "/services?service=dataInfrastructure"
   },
   {
     name: "Análise de dados",
     description: "Extraímos valor dos seus dados para revelar oportunidades, facilitar o planejamento e impulsionar resultados estratégicos.",
     iconUrl: "/icons/services/analysis.png",
-    path: "/services/data-analysis"
+    path: "/services?service=dataAnalysis"
   },
   {
     name: "Arquitetura de dados",
     description: "Projetamos, implementamos e otimizados infraestrutura de dados end-to-end com alta disponibilidade, segurança e performance.",
     iconUrl: "/icons/services/architecture.png",
-    path: "/services/data-architecture"
+    path: "/services?service=dataArchitecture"
   },
   {
     name: "Aplicação de IA e ML",
     description: "Projetamos, implementamos e otimizados infraestrutura de dados end-to-end com alta disponibilidade, segurança e performance.",
     iconUrl: "/icons/services/ia.png",
-    path: "/services/ia-n-ml"
+    path: "/services?service=AIApplications"
   },
   {
     name: "Plataforma de dados",
     description: "Projetamos, implementamos e otimizados infraestrutura de dados end-to-end com alta disponibilidade, segurança e performance.",
     iconUrl: "/icons/services/data_eng.png",
-    path: "/services/data-platform"
+    path: "/services?service=dataPlatform"
   },
   {
     name: "Desenvolvimento Full-Stack",
     description: "Oferecemos desenvolvimento sob medida para transformar suas ideias em aplicações robustas e escaláveis",
     iconUrl: "/icons/services/full_stack.png",
-    path: "/services/full-stack"
+    path: "/services?service=fullStack"
   }
 ]
 
@@ -343,34 +343,38 @@ export const SERVICES_DETAILS = {
     ]
   },
   fullStack: {
-    title: "Desenvolvimento full-stack",
-    description: "Descrição da análise de dados",
+    title: "Desenvolvimento Full-Stack",
+    description: "Engenharia de ponta a ponta para aplicações web e móveis, abrangendo desde a arquitetura de interfaces responsivas até a implementação de sistemas de back-end escaláveis e integração de bancos de dados.",
     items: [
       {
-        title: "Dashboards e relatórios",
-        description: "Paineis personalizados e relatórios feitos sob medida para atender às necessidades da sua operação."
+        title: "Arquitetura de Front-end",
+        description: "Desenvolvimento de interfaces performáticas e centradas no usuário, utilizando frameworks modernos e padrões de design modular."
       },
       {
-        title: "Tratamento de dados",
-        description: "Revisão e organização do banco de dados."
+        title: "Sistemas de Back-end e APIs",
+        description: "Construção de lógica de negócio robusta e APIs RESTful/GraphQL seguras, garantindo alta disponibilidade e integridade dos dados."
+      },
+      {
+        title: "Gerenciamento de Infraestrutura",
+        description: "Modelagem de bancos de dados relacionais e não-relacionais, além da configuração de pipelines de CI/CD e ambientes em nuvem."
       }
     ],
     benefits: [
       {
-        title: "Decisões mais rápidas",
-        description: "Entenda de forma imediata a situação do seu negócio"
+        title: "Escalabilidade Técnica",
+        description: "Sistemas projetados para suportar o crescimento do volume de acessos e processamento sem perda de performance."
       },
       {
-        title: "Previsibilidades de custos",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Interoperabilidade",
+        description: "Integração fluida entre diferentes plataformas, serviços de terceiros e ecossistemas legados."
       },
       {
-        title: "Transparência",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Segurança e Conformidade",
+        description: "Implementação de protocolos rigorosos de proteção de dados e autenticação seguindo padrões internacionais."
       },
       {
-        title: "Previsibilidades de custos",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Otimização de Manutenção",
+        description: "Código limpo e documentado que reduz o débito técnico e facilita a evolução contínua da aplicação."
       }
     ]
   }

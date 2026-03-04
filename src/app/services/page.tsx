@@ -2,39 +2,46 @@
 
 import { useState } from "react";
 import "./services.scss";
-import { SERVICES_LIST } from "@/lib/services_description";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
+import { Benefits, Carrosel, ServiceOffers, ServiceTitle } from "./services_blocks";
+import { PRODUCTS_LIST, SERVICES_DETAILS } from "@/lib/pt_text";
+
+type ServiceKey = keyof typeof SERVICES_DETAILS;
+
+const SERVICE_LIST = Object.keys(SERVICES_DETAILS) as ServiceKey[];
 
 export default function Services() {
-  const [activeTab, updateTab] = useState<number>(0);
-  const [showList, updateShowList] = useState<boolean>(false);
+
+  const url = new URL(window.location.href);
+
+  const param = url.searchParams.get("service") as ServiceKey | null | undefined;
+
+  if (typeof param === "string" && !SERVICES_DETAILS[param]) {
+    // Handle invalid service parameter 
+    return(
+      <div className="service">
+      <ServiceTitle
+        title="Nenhum serviço selecionado"
+        description="Faça uma seleção válida." />
+      </div>
+    )
+  }
+
+  const activeService: ServiceKey = param ?? SERVICE_LIST[0] as ServiceKey;
+
+  const THIS_SERVICE = SERVICES_DETAILS[activeService];
 
   return (
-    <div className="services-page">
-      <h1>Services</h1>
-      <div className="services-panel">
-        <div className={`services-list ${showList ? 'active' : ''}`}>
-          {SERVICES_LIST.map((service, index) => (
-            <button
-              key={index}
-              className={index === activeTab ? "active" : undefined}
-              onClick={() => {
-                updateTab(index);
-                updateShowList(false);
-              }}
-            >
-              {service.name}
-            </button>
-          ))}
-        </div>
-        <button className={`list-switch ${showList ? 'active': ''}`}
-          onClick={() => updateShowList(!showList)}>
-            <Image src='arrow.png' alt='arrow' height={15} width={15}/></button>
-        <div className={`service-description ${showList ? 'inactive' : ''}`}>
-          <ReactMarkdown>{SERVICES_LIST[activeTab].description}</ReactMarkdown>
-        </div>
-      </div>
+    <div className="service">
+      <ServiceTitle
+        title={THIS_SERVICE.title}
+        description={THIS_SERVICE.description} />
+      <ServiceOffers itemsList={THIS_SERVICE.items} />
+      <Benefits
+        benefits={THIS_SERVICE.benefits}
+      />
+      <Carrosel products={PRODUCTS_LIST} />
     </div>
   );
 }
