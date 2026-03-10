@@ -34,7 +34,7 @@ export const MemberProfile = ({ profile, alignment }: MemberProfileProps) => {
           ))}
         </div>
       </div>
-      <span>{profile.name}</span>
+      <h2>{profile.name}</h2>
       <div className="member-description">
         <ReactMarkdown>{profile.description}</ReactMarkdown>
       </div>

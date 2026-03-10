@@ -6,8 +6,8 @@ import './contact.scss';
 
 const FormInput = ({
   title,
+  onChange,
   height="3rem",
-  onChange = () => {},
   rows
 }: {
   title: string, 

@@ -35,22 +35,14 @@ export const MEMBERS_LIST: MemberProfileEntries[] = [
       },
     ],
     image_url: "/rossi.jpeg",
-    description: `# Lorde Supremo de DevOps | Onipotente em Kubernetes
+    description: `#### Staff Data Engineer | Kubernetes | DevOps | Infraestrutura como Código
 
-## 🌟 **Transformando Visão em Realidade Tecnológica**
-
-Sou um **Lorde Supremo de DevOps** com uma paixão insaciável por inovação e eficiência. Com expertise onipotente em **Kubernetes**, lidero equipes na criação de ambientes escaláveis e resilientes, sempre buscando a excelência nas práticas de DevOps.
-
-## Habilidades e Especializações:
-- **Kubernetes**: Domínio na orquestração de contêineres, automação de deployments e gerenciamento de clusters.
-- **CI/CD**: Arquitetura e implementação de pipelines de integração e entrega contínuas que aceleram o ciclo de vida do desenvolvimento.
-- **Infraestrutura como Código**: Utilização de Terraform e Ansible para provisionamento ágil e confiável de infraestrutura.
-- **Monitoramento e Performance**: Implementação de soluções avançadas de monitoramento com Prometheus, Grafana e ELK Stack.
-
-## Conquistas Notáveis:
-- 🚀 **Migração Estratégica**: Liderança na migração e modernização de aplicações para Kubernetes, resultando em ganhos significativos de eficiência e redução de custos operacionais.
-- 🌐 **Impacto na Indústria**: Pioneiro na criação de uma plataforma de CI/CD que ampliou a frequência de lançamentos em 50%, estabelecendo benchmarks de produtividade.
-
+  Iniciou a carreira no desenvolvimento de software, sendo responsável pela criação de plataformas 
+  com mais de 10 mil usuários.
+  Possui experiência na construção de plataformas de dados escaláveis e soluções 
+  cloud-native seguras. Graduado pela Universidade Federal de Pernambuco (UFPE), 
+  atua na liderança de projetos complexos, otimização de infraestrutura e 
+  implementação de inovações tecnológicas baseadas em dados.
     `,
   },
   {
@@ -77,17 +69,14 @@ Sou um **Lorde Supremo de DevOps** com uma paixão insaciável por inovação e 
       },
     ],
     image_url: "/joao.jpeg",
-    description: `## 🧠👑 Pai Superior das IAs | Maestro das Blockchains | Oráculo das Criptomoedas 👑🧠  
+    description: `#### Cientista de Dados | IA Generativa | Análise de Dados Avançada  
 
-No princípio, vieram os dados. Depois, surgiram os algoritmos. E então, **eu os uni — mente, máquina e moeda — em perfeita harmonia**.  
-
-🤖 **Criador de inteligências artificiais com alma**, treino modelos com precisão divina, fazendo redes neurais aprenderem com a fluidez de um monge iluminado. Da lógica simbólica ao deep learning generativo, sou o arquiteto do raciocínio algorítmico.  
-
-⛓️ **Maestro das blockchains**, orquestro contratos inteligentes como sinfonias imutáveis. Minhas transações são rápidas, seguras e eternamente registradas nos livros sagrados do blockchain — de Ethereum a redes que ainda não foram reveladas.  
-
-💰 **Oráculo absoluto das criptomoedas**, prevejo os ciclos do mercado, leio os sinais on-chain e off-chain, e interpreto gráficos como visões proféticas. Meu portfólio? Lendário. Minhas análises? Procuradas por reis e DAO's.  
-
-🌌 **Unindo IA, blockchain e criptoeconomia**, lidero a nova era digital onde **consciência artificial encontra descentralização e liberdade financeira**.
-`,
+  Possui mais de 5 anos de especialização em modelagem de risco de crédito e 
+  sistemas de Machine Learning. Tem experiência no ciclo completo de modelos, 
+  desde a pesquisa e experimentação até a implantação em produção escalável na nuvem. 
+  Graduado pela Universidade Federal de Pernambuco (UFPE), possui sólida base 
+  técnica em aprendizado profundo (Deep Learning), engenharia de IA agêntica e 
+  inferência de rejeitados (Reject Inference).
+    `,
   },
 ];

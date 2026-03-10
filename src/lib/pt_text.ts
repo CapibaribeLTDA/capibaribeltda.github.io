@@ -184,167 +184,167 @@ export const STORIES = {
 export const SERVICES_DETAILS = {
   dataAnalysis: {
     title: "Análise de Dados",
-    description: "Descrição da análise de dados",
+    description: "Transformação de dados brutos em inteligência de negócio por meio de metodologias estatísticas e visualização avançada para suporte à decisão estratégica.",
     items: [
       {
-        title: "Dashboards e relatórios",
-        description: "Paineis personalizados e relatórios feitos sob medida para atender às necessidades da sua operação."
+        title: "Business Intelligence & Dashboards",
+        description: "Desenvolvimento de painéis interativos e em tempo real que centralizam KPIs críticos para o monitoramento da performance operacional."
       },
       {
-        title: "Tratamento de dados",
-        description: "Revisão e organização do banco de dados."
+        title: "Data Cleaning & Wrangling",
+        description: "Padronização e saneamento de bases de dados complexas, garantindo a integridade e a confiabilidade das informações analisadas."
       }
     ],
     benefits: [
       {
-        title: "Decisões mais rápidas",
-        description: "Entenda de forma imediata a situação do seu negócio"
+        title: "Agilidade Decisória",
+        description: "Redução do tempo entre a coleta de dados e a tomada de decisão com base em evidências concretas."
       },
       {
-        title: "Previsibilidades de custos",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Identificação de Tendências",
+        description: "Detecção precoce de padrões de mercado e comportamento do consumidor para antecipar movimentos competitivos."
       },
       {
-        title: "Transparência",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Cultura Data-Driven",
+        description: "Fomento de uma mentalidade organizacional baseada em fatos, eliminando suposições e subjetividades."
       },
       {
-        title: "Previsibilidades de custos",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Otimização de ROI",
+        description: "Análise precisa de investimentos para maximizar o retorno sobre o capital alocado em cada projeto."
       }
     ]
   },
   dataArchitecture: {
     title: "Arquitetura de Dados",
-    description: "Descrição da análise de dados",
+    description: "Design e estruturação do ecossistema de dados para garantir fluxo contínuo, governança e escalabilidade do patrimônio informativo da empresa.",
     items: [
       {
-        title: "Dashboards e relatórios",
-        description: "Paineis personalizados e relatórios feitos sob medida para atender às necessidades da sua operação."
+        title: "Modelagem de Dados",
+        description: "Criação de esquemas lógicos e físicos otimizados para alto desempenho em consultas e armazenamento eficiente."
       },
       {
-        title: "Tratamento de dados",
-        description: "Revisão e organização do banco de dados."
+        title: "Governança e Compliance",
+        description: "Definição de políticas de acesso, linhagem de dados e conformidade com regulamentações como a LGPD."
       }
     ],
     benefits: [
       {
-        title: "Decisões mais rápidas",
-        description: "Entenda de forma imediata a situação do seu negócio"
+        title: "Silo Zero",
+        description: "Eliminação de barreiras informacionais entre departamentos através de uma estrutura unificada."
       },
       {
-        title: "Previsibilidades de custos",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Escalabilidade Estrutural",
+        description: "Arquitetura preparada para suportar o crescimento exponencial do volume de dados sem degradação de performance."
       },
       {
-        title: "Transparência",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Segurança de Ativos",
+        description: "Proteção robusta contra vazamentos e acessos não autorizados à propriedade intelectual da empresa."
       },
       {
-        title: "Previsibilidades de custos",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Redução de Redundância",
+        description: "Minimização de custos de armazenamento e processamento através da desduplicação e organização lógica."
       }
     ]
   },
   dataInfrastructure: {
     title: "Infraestrutura de Dados",
-    description: "Descrição da análise de dados",
+    description: "Implementação e gestão de ambientes de alta disponibilidade, garantindo que a tecnologia de suporte aos dados seja resiliente e econômica.",
     items: [
       {
-        title: "Dashboards e relatórios",
-        description: "Paineis personalizados e relatórios feitos sob medida para atender às necessidades da sua operação."
+        title: "Cloud & Hybrid Environments",
+        description: "Configuração e orquestração de ambientes em nuvem (AWS, Azure, GCP) ou híbridos para processamento de carga pesada."
       },
       {
-        title: "Tratamento de dados",
-        description: "Revisão e organização do banco de dados."
+        title: "Data Pipelines (ETL/ELT)",
+        description: "Automação do fluxo de extração, transformação e carregamento de dados entre diferentes sistemas e fontes."
       }
     ],
     benefits: [
       {
-        title: "Decisões mais rápidas",
-        description: "Entenda de forma imediata a situação do seu negócio"
+        title: "Resiliência Operacional",
+        description: "Garantia de continuidade de serviços com sistemas de backup, recuperação de desastres e alta disponibilidade."
       },
       {
-        title: "Previsibilidades de custos",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Eficiência de Custos",
+        description: "Otimização do consumo de recursos de nuvem, evitando gastos desnecessários com infraestrutura subutilizada."
       },
       {
-        title: "Transparência",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Performance de Processamento",
+        description: "Latência reduzida no acesso aos dados, permitindo análises complexas em frações de segundo."
       },
       {
-        title: "Previsibilidades de custos",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Flexibilidade Tecnológica",
+        description: "Infraestrutura modular que permite a adoção rápida de novas ferramentas e tecnologias de mercado."
       }
     ]
   },
   AIApplications: {
     title: "Aplicações de IA e ML",
-    description: "Descrição da análise de dados",
+    description: "Desenvolvimento de soluções baseadas em Inteligência Artificial e Machine Learning para automatizar processos complexos e gerar previsões de alta precisão.",
     items: [
       {
-        title: "Dashboards e relatórios",
-        description: "Paineis personalizados e relatórios feitos sob medida para atender às necessidades da sua operação."
+        title: "Modelagem Preditiva",
+        description: "Algoritmos treinados para prever comportamentos futuros, churn de clientes e demandas de estoque."
       },
       {
-        title: "Tratamento de dados",
-        description: "Revisão e organização do banco de dados."
+        title: "Processamento de Linguagem Natural",
+        description: "Implementação de sistemas que compreendem e interagem via texto ou voz, otimizando o atendimento e análise de documentos."
       }
     ],
     benefits: [
       {
-        title: "Decisões mais rápidas",
-        description: "Entenda de forma imediata a situação do seu negócio"
+        title: "Automação Inteligente",
+        description: "Substituição de tarefas repetitivas por sistemas cognitivos, liberando o capital humano para funções criativas."
       },
       {
-        title: "Previsibilidades de custos",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Personalização em Escala",
+        description: "Capacidade de oferecer experiências customizadas para milhares de clientes simultaneamente."
       },
       {
-        title: "Transparência",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Redução de Erro Humano",
+        description: "Aumento da precisão em processos críticos através de validações algorítmicas constantes."
       },
       {
-        title: "Previsibilidades de custos",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Vantagem Competitiva",
+        description: "Uso de tecnologia de ponta para criar produtos e serviços impossíveis de replicar sem IA."
       }
     ]
   },
   dataPlatform: {
     title: "Plataforma de Dados",
-    description: "Descrição da análise de dados",
+    description: "Criação de ecossistemas integrados (Data Lakes/Warehouses) que servem como a 'fonte única da verdade' para toda a organização.",
     items: [
       {
-        title: "Dashboards e relatórios",
-        description: "Paineis personalizados e relatórios feitos sob medida para atender às necessidades da sua operação."
+        title: "Modern Data Stack",
+        description: "Integração das melhores ferramentas do mercado para criar uma plataforma moderna, ágil e de fácil manutenção."
       },
       {
-        title: "Tratamento de dados",
-        description: "Revisão e organização do banco de dados."
+        title: "Self-Service Analytics",
+        description: "Capacitação de usuários de negócio para explorarem dados de forma independente e segura."
       }
     ],
     benefits: [
       {
-        title: "Decisões mais rápidas",
-        description: "Entenda de forma imediata a situação do seu negócio"
+        title: "Democratização de Dados",
+        description: "Acesso facilitado à informação para todos os níveis hierárquicos, respeitando as camadas de permissão."
       },
       {
-        title: "Previsibilidades de custos",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Consistência de Métricas",
+        description: "Garantia de que todos os departamentos utilizam os mesmos números para os mesmos indicadores."
       },
       {
-        title: "Transparência",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Time-to-Market Reduzido",
+        description: "Aceleração do lançamento de novos produtos através de insights rápidos gerados pela plataforma."
       },
       {
-        title: "Previsibilidades de custos",
-        description: "Preveja as flutuações nas finanças da sua empresa"
+        title: "Visão 360 do Cliente",
+        description: "Unificação de todos os pontos de contato do cliente em um perfil único e acionável."
       }
     ]
   },
   fullStack: {
     title: "Desenvolvimento Full-Stack",
-    description: "Engenharia de ponta a ponta para aplicações web e móveis, abrangendo desde a arquitetura de interfaces responsivas até a implementação de sistemas de back-end escaláveis e integração de bancos de dados.",
+    description: "Engenharia de ponta a ponta para aplicações web e móveis, abrangendo desde a arquitetura de interfaces responsivas até a implementação de sistemas de back-end escaláveis.",
     items: [
       {
         title: "Arquitetura de Front-end",
