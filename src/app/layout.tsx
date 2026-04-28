@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { TabsMenu } from "@/components/tabs_menu/tabs_menu";
 import { Footer } from "@/components/footer/footer";
 import ThemeSwitch from '@/components/theme_switch/theme_switch';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 export default function RootLayout({
@@ -17,10 +17,21 @@ export default function RootLayout({
 
   const [theme, setTheme] = useState<'dark' | 'light'>('light');
 
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('user-theme') as 'dark' | 'light' | null;
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark');
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  }, []);
+
   const handleToggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', newTheme);
     setTheme(newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('user-theme', newTheme);
   }
 
