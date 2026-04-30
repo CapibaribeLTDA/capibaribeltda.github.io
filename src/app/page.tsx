@@ -19,6 +19,7 @@ export default function Home() {
                 iconURL={item.iconUrl}
                 title={item.name}
                 description={item.description}
+                redirecturl={item.path}
               />)
           }
         </div>
