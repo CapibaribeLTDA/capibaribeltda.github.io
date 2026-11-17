@@ -211,6 +211,7 @@ a {
         border-top: rgb(202, 202, 202) 1px solid;
         height: 100%;
         width: 100%;
+        pointer-events: none;
         mask-image: linear-gradient(90deg,
             transparent 0%,
             white 50%,
